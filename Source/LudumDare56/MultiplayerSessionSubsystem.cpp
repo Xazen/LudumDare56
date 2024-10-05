@@ -18,6 +18,8 @@ void PrintString(const FString& Str)
 UMultiplayerSessionSubsystem::UMultiplayerSessionSubsystem()
 {
 	PrintString("Constructor");
+	CreateSessionAfterDestroy = false;
+	DestroyServerName = "";
 }
 
 void UMultiplayerSessionSubsystem::Initialize(FSubsystemCollectionBase& Collection)
@@ -32,6 +34,7 @@ void UMultiplayerSessionSubsystem::Initialize(FSubsystemCollectionBase& Collecti
 		if (SessionInterface.IsValid())
 		{
 			SessionInterface->OnCreateSessionCompleteDelegates.AddUObject(this, &UMultiplayerSessionSubsystem::OnCreateSessionComplete);
+			SessionInterface->OnDestroySessionCompleteDelegates.AddUObject(this, &UMultiplayerSessionSubsystem::OnDestroySessionComplete);
 		}
 	}
 }
@@ -52,6 +55,17 @@ void UMultiplayerSessionSubsystem::CreateServer(FString ServerName)
 	}
 
 	FName MySessionName = FName("LD56 Session Name");
+	FNamedOnlineSession* ExistingSession = SessionInterface->GetNamedSession(MySessionName);
+	if (ExistingSession)
+	{
+
+		FString msg = FString::Printf(TEXT("Session %s already exists"), *MySessionName.ToString());
+		PrintString(msg);
+		CreateSessionAfterDestroy = true;
+		DestroyServerName = ServerName;
+		SessionInterface->DestroySession(MySessionName);
+		return;
+	}
 
 	FOnlineSessionSettings SessionSettings;
 
@@ -85,5 +99,15 @@ void UMultiplayerSessionSubsystem::OnCreateSessionComplete(FName SessionName, bo
 	if (WasSuccessful)
 	{
 		GetWorld()->ServerTravel("/Game/ThirdPerson/Maps/ThirdPersonMap?listen");
+	}
+}
+
+void UMultiplayerSessionSubsystem::OnDestroySessionComplete(FName SessionName, bool WasSuccessful)
+{
+	PrintString(FString::Printf(TEXT("OnDestroySessionComplete: %d"), WasSuccessful));
+	if (CreateSessionAfterDestroy)
+	{
+		CreateSessionAfterDestroy = false;
+		CreateServer(DestroyServerName);
 	}
 }
