@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C42410C6-48F7-48B6-9CE2-D2C2163BAE2D}" SchemaVersion="119">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{C42410C6-48F7-48B6-9CE2-D2C2163BAE2D}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_tempMusic" ID="{61DCE32F-3A90-4C0A-BC4F-DCA6D07C3EE8}">
+					<ChildrenList>
+						<Action Name="" ID="{DFB8C376-DC50-4911-8CA6-1354D94DA2EB}" ShortID="464246550">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="tempMusic" ID="{6D9A1206-0B7B-4A63-BDB2-BBE4348450A3}" WorkUnitID="{F74A50C0-B08D-48F0-AA9F-907DA97341E3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
