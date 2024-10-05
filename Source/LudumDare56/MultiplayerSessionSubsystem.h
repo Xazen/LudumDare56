@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "Subsystems/GameInstanceSubsystem.h"
+#include "Interfaces/OnlineSessionInterface.h"
+#include "OnlineSessionSettings.h"
 #include "MultiplayerSessionSubsystem.generated.h"
 
 /**
@@ -15,8 +17,27 @@ class LUDUMDARE56_API UMultiplayerSessionSubsystem : public UGameInstanceSubsyst
 	GENERATED_BODY()
 
 public:
+	IOnlineSessionPtr SessionInterface;
+
 	UMultiplayerSessionSubsystem();
 
 	void Initialize(FSubsystemCollectionBase& Collection) override;
 	void Deinitialize() override;
+
+	UFUNCTION(BlueprintCallable)
+	void CreateServer(FString ServerName);
+
+	UFUNCTION(BlueprintCallable)
+	void FindServer(FString ServerName);
+
+	void OnCreateSessionComplete(FName SessionName, bool WasSuccessful);
+	void OnDestroySessionComplete(FName SessionName, bool WasSuccessful);
+	void OnJoinSessionComplete(FName SessionName, EOnJoinSessionCompleteResult::Type Result);
+	void OnFindSessionsComplete(bool WasSuccessful);
+
+	bool CreateSessionAfterDestroy;
+	FString DestroyServerName;
+	FString ServerNameToFind;
+	FName MySessionName;
+	TSharedPtr<FOnlineSessionSearch> SessionSearch;
 };
