@@ -13,6 +13,12 @@ class ALudumDare56GameMode : public AGameModeBase
 
 public:
 	ALudumDare56GameMode();
+
+	UFUNCTION(BlueprintCallable)
+	void HostLANGame();
+
+	UFUNCTION(BlueprintCallable)
+	void JoinLANGame();
 };
 
 

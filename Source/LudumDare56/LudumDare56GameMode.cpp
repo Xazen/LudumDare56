@@ -13,3 +13,17 @@ ALudumDare56GameMode::ALudumDare56GameMode()
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
 }
+
+void ALudumDare56GameMode::HostLANGame()
+{
+	GetWorld()->ServerTravel("/Game/ThirdPerson/Maps/ThirdPersonExampleMap?listen");
+}
+
+void ALudumDare56GameMode::JoinLANGame()
+{
+	APlayerController *PC = GetGameInstance()->GetFirstLocalPlayerController();
+	if (PC)
+	{
+		PC->ClientTravel("192.168.178.171", TRAVEL_Absolute);
+	}
+}
