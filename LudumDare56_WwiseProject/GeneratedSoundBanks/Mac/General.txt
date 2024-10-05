@@ -1,0 +1,10 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2580001413	Play_tempMusic			\Default Work Unit\Play_tempMusic	
+	3534139762	Play_testTone			\Default Work Unit\Play_testTone	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	891453934	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\testTone\Tone Generator	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	1011997918	Temp Music	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Mac\SFX\Music\Temp Music_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\tempMusic\Ludum_2 Template-01\Temp Music		6336096
+

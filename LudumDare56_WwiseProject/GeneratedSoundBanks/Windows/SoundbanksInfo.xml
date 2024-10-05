@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" GUID="{9764593B-6512-4C1D-B6C0-D9453C0D4A61}" Language="SFX" Hash="{9C09AC0A-216A-3FAA-8513-A22A704A0FB7}">
+		<SoundBank Id="133642231" Type="User" GUID="{9764593B-6512-4C1D-B6C0-D9453C0D4A61}" Language="SFX" Hash="{9FCE66E0-320A-DB05-0EB7-02BB6944E598}">
 			<ObjectPath>\SoundBanks\Default Work Unit\General</ObjectPath>
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
@@ -19,15 +19,27 @@
 					<CachePath>SFX/Music/Temp Music_FBC78EF0.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="891453934" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Default Work Unit\testTone\Tone Generator" GUID="{C83069F8-53A7-4DF2-A56A-CEBE5CAC2C9F}" LibName="Wwise Tone Generator" LibId="6684674"/>
+				</Custom>
+			</Plugins>
 			<Events>
-				<Event Id="2580001413" Name="Play_tempMusic" ObjectPath="\Events\Default Work Unit\Play_tempMusic" GUID="{61DCE32F-3A90-4C0A-BC4F-DCA6D07C3EE8}" DurationType="OneShot" DurationMin="66" DurationMax="66">
+				<Event Id="2580001413" Name="Play_tempMusic" ObjectPath="\Events\Default Work Unit\Play_tempMusic" GUID="{61DCE32F-3A90-4C0A-BC4F-DCA6D07C3EE8}" DurationType="OneShot" DurationMin="68.207954" DurationMax="68.207954">
 					<MediaRefs>
 						<MediaRef Id="1011997918"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3534139762" Name="Play_testTone" ObjectPath="\Events\Default Work Unit\Play_testTone" GUID="{08F417DB-07D6-4FB3-9068-2274F4C3661F}" DurationType="Infinite">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="891453934"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{B6CBD692-12EC-CDBA-0932-48F63C40C91F}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{7CBCA429-BA0E-8485-414B-5C46A720D69E}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -42,5 +54,5 @@
 			</Busses>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{24AD6398-F48E-AE14-5C54-037C0D70B71F}</FileHash>
+	<FileHash>{551213B4-2038-D8DB-B4FE-8F06E5F0F436}</FileHash>
 </SoundBanksInfo>

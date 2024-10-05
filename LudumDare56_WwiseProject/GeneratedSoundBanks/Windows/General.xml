@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" GUID="{9764593B-6512-4C1D-B6C0-D9453C0D4A61}" Language="SFX" Hash="{9C09AC0A-216A-3FAA-8513-A22A704A0FB7}">
+		<SoundBank Id="133642231" Type="User" GUID="{9764593B-6512-4C1D-B6C0-D9453C0D4A61}" Language="SFX" Hash="{9FCE66E0-320A-DB05-0EB7-02BB6944E598}">
 			<ObjectPath>\SoundBanks\Default Work Unit\General</ObjectPath>
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
@@ -11,14 +11,26 @@
 					<CachePath>SFX/Music/Temp Music_FBC78EF0.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="891453934" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Default Work Unit\testTone\Tone Generator" GUID="{C83069F8-53A7-4DF2-A56A-CEBE5CAC2C9F}" LibName="Wwise Tone Generator" LibId="6684674"/>
+				</Custom>
+			</Plugins>
 			<Events>
-				<Event Id="2580001413" Name="Play_tempMusic" ObjectPath="\Events\Default Work Unit\Play_tempMusic" GUID="{61DCE32F-3A90-4C0A-BC4F-DCA6D07C3EE8}" DurationType="OneShot" DurationMin="66" DurationMax="66">
+				<Event Id="2580001413" Name="Play_tempMusic" ObjectPath="\Events\Default Work Unit\Play_tempMusic" GUID="{61DCE32F-3A90-4C0A-BC4F-DCA6D07C3EE8}" DurationType="OneShot" DurationMin="68.207954" DurationMax="68.207954">
 					<MediaRefs>
 						<MediaRef Id="1011997918"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3534139762" Name="Play_testTone" ObjectPath="\Events\Default Work Unit\Play_testTone" GUID="{08F417DB-07D6-4FB3-9068-2274F4C3661F}" DurationType="Infinite">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="891453934"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{29CAB5F8-6DA1-5306-485B-56321807FACC}</FileHash>
+	<FileHash>{D8AADFF3-824B-5B9A-7FA1-4EA78C37B330}</FileHash>
 </SoundBanksInfo>

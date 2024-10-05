@@ -37,6 +37,9 @@
 									</PropertyList>
 									<ChildrenList>
 										<MusicTransition Name="Transition" ID="{CCBE5925-5B7B-4A87-9001-F6046EFFE42C}">
+											<PropertyList>
+												<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
+											</PropertyList>
 											<TransitionInfo/>
 										</MusicTransition>
 									</ChildrenList>
@@ -47,6 +50,9 @@
 					</ReferenceList>
 					<ChildrenList>
 						<MusicSegment Name="Ludum_2 Template-01" ID="{609C9731-FB57-43A9-BBD5-6089B2936853}" ShortID="32395626">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="68207.9566003616"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A26F471C-2E9A-4F51-9AE5-CA786A5ADBDF}"/>
@@ -95,6 +101,7 @@
 																				<Property Name="EndTrimOffset" Type="Real64" Value="66000"/>
 																				<Property Name="FadeInMode" Type="int16" Value="0"/>
 																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="358.047016274864"/>
 																			</PropertyList>
 																			<AudioSourceRef Name="Temp Music" ID="{E4FF1DBD-B9B4-4457-96E9-CDD2793337BC}"/>
 																		</MusicClip>
@@ -113,7 +120,11 @@
 								<ObjectList Name="Cues">
 									<Reference>
 										<Local>
-											<MusicCue Name="Entry Cue" ID="{89AAB66D-9310-4F77-BC7C-52B0D0A43C9A}"/>
+											<MusicCue Name="Entry Cue" ID="{89AAB66D-9310-4F77-BC7C-52B0D0A43C9A}">
+												<PropertyList>
+													<Property Name="TimeMs" Type="Real64" Value="2207.95660036166"/>
+												</PropertyList>
+											</MusicCue>
 										</Local>
 									</Reference>
 									<Reference>
@@ -121,7 +132,7 @@
 											<MusicCue Name="Exit Cue" ID="{5721E5EC-9E0E-46D9-AD03-EA26840B85A5}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="66000"/>
+													<Property Name="TimeMs" Type="Real64" Value="68207.9566003616"/>
 												</PropertyList>
 											</MusicCue>
 										</Local>
