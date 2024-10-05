@@ -1,5 +1,18 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	3121412406	PlayerIndex			\Default Work Unit\PlayerIndex	
+
+Switch	ID	Name	Switch Group			Notes
+	671679327	Hunter	PlayerIndex			
+	3694479069	Prey_01	PlayerIndex			
+	3694479070	Prey_02	PlayerIndex			
+	3694479071	Prey_03	PlayerIndex			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	591352928	2DMusic			\Default Work Unit\Master Audio Bus\PlayerSpecific\2DMusic	
+	717297682	PlayerSpecific			\Default Work Unit\Master Audio Bus\PlayerSpecific	
+	1973600711	Environmental			\Default Work Unit\Master Audio Bus\Environmental	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3897422071	OpponentMusic			\Default Work Unit\Master Audio Bus\PlayerSpecific\OpponentMusic	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

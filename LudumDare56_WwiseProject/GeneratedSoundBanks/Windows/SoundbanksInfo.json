@@ -18,60 +18,302 @@
     "Type": "User",
     "GUID": "{9764593B-6512-4C1D-B6C0-D9453C0D4A61}",
     "Language": "SFX",
-    "Hash": "{9FCE66E0-320A-DB05-0EB7-02BB6944E598}",
+    "Hash": "{933992A8-10CE-0DD7-2FAF-BD26356221AD}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\General",
     "ShortName": "General",
     "Path": "General.bnk",
     "Media": [
      {
-      "Id": "1011997918",
+      "Id": "21981681",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "Music\\Temp Music.wav",
-      "CachePath": "SFX/Music/Temp Music_FBC78EF0.wem"
-     }
-    ],
-    "Plugins": {
-     "Custom": [
-      {
-       "Id": "891453934",
-       "Name": "Tone Generator",
-       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\testTone\\Tone Generator",
-       "GUID": "{C83069F8-53A7-4DF2-A56A-CEBE5CAC2C9F}",
-       "LibName": "Wwise Tone Generator",
-       "LibId": "6684674"
-      }
-     ]
-    },
-    "Events": [
-     {
-      "Id": "2580001413",
-      "Name": "Play_tempMusic",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_tempMusic",
-      "GUID": "{61DCE32F-3A90-4C0A-BC4F-DCA6D07C3EE8}",
-      "DurationType": "OneShot",
-      "DurationMin": "68.207954",
-      "DurationMax": "68.207954",
-      "MediaRefs": [
-       {
-        "Id": "1011997918"
-       }
-      ]
+      "ShortName": "Music\\TinyTrack_StressLvl_2.wav",
+      "CachePath": "SFX/Music/TinyTrack_StressLvl_2_56CEF360.wem"
      },
      {
-      "Id": "3534139762",
-      "Name": "Play_testTone",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_testTone",
-      "GUID": "{08F417DB-07D6-4FB3-9068-2274F4C3661F}",
+      "Id": "75666480",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Music\\TinyTrack_Hunter_1.wav",
+      "CachePath": "SFX/Music/TinyTrack_Hunter_1_56CEF360.wem"
+     },
+     {
+      "Id": "170286855",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Music\\BigTrack_StressLvl_3.wav",
+      "CachePath": "SFX/Music/BigTrack_StressLvl_3_56CEF360.wem"
+     },
+     {
+      "Id": "229446504",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Music\\TinyTrack_StressLvl_3.wav",
+      "CachePath": "SFX/Music/TinyTrack_StressLvl_3_56CEF360.wem"
+     },
+     {
+      "Id": "234216803",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Music\\BigTrack_Lead.wav",
+      "CachePath": "SFX/Music/BigTrack_Lead_56CEF360.wem"
+     },
+     {
+      "Id": "251464627",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Music\\TinyTrack_Hunter_2.wav",
+      "CachePath": "SFX/Music/TinyTrack_Hunter_2_56CEF360.wem"
+     },
+     {
+      "Id": "319399716",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Music\\BigTrack_Base.wav",
+      "CachePath": "SFX/Music/BigTrack_Base_56CEF360.wem"
+     },
+     {
+      "Id": "553048187",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Music\\TinyTrack_StressLvl_1.wav",
+      "CachePath": "SFX/Music/TinyTrack_StressLvl_1_56CEF360.wem"
+     },
+     {
+      "Id": "624560513",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Music\\BigTrack_StressLvl_1.wav",
+      "CachePath": "SFX/Music/BigTrack_StressLvl_1_56CEF360.wem"
+     },
+     {
+      "Id": "777875941",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Music\\BigTrack_Prey.wav",
+      "CachePath": "SFX/Music/BigTrack_Prey_56CEF360.wem"
+     },
+     {
+      "Id": "971307101",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Music\\BigTrack_StressLvl_2.wav",
+      "CachePath": "SFX/Music/BigTrack_StressLvl_2_56CEF360.wem"
+     },
+     {
+      "Id": "1026431310",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Music\\TinyTrack_Base.wav",
+      "CachePath": "SFX/Music/TinyTrack_Base_56CEF360.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2932040671",
+      "Name": "Play_Music",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Music",
+      "GUID": "{D0AEE4F7-87A8-4589-8241-24600350F313}",
       "DurationType": "Infinite",
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "891453934"
-        }
-       ]
-      }
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3121412406",
+         "Id": "671679327",
+         "GUID": "{A867BAC7-F348-4A13-9D99-8D6FA7492B5E}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "170286855"
+         },
+         {
+          "Id": "234216803"
+         },
+         {
+          "Id": "319399716"
+         },
+         {
+          "Id": "624560513"
+         },
+         {
+          "Id": "777875941"
+         },
+         {
+          "Id": "971307101"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3121412406",
+         "Id": "3694479069",
+         "GUID": "{EE6F80A2-567A-46C4-AAED-E7A2896CBFF9}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "21981681"
+         },
+         {
+          "Id": "75666480"
+         },
+         {
+          "Id": "229446504"
+         },
+         {
+          "Id": "251464627"
+         },
+         {
+          "Id": "553048187"
+         },
+         {
+          "Id": "1026431310"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3121412406",
+         "Id": "3694479070",
+         "GUID": "{587098C4-8763-4D17-98C3-FCC074C29CD1}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "21981681"
+         },
+         {
+          "Id": "75666480"
+         },
+         {
+          "Id": "229446504"
+         },
+         {
+          "Id": "251464627"
+         },
+         {
+          "Id": "553048187"
+         },
+         {
+          "Id": "1026431310"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3121412406",
+         "Id": "3694479071",
+         "GUID": "{12DB972D-8992-4D0E-81CF-EACA80168D2F}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "21981681"
+         },
+         {
+          "Id": "75666480"
+         },
+         {
+          "Id": "229446504"
+         },
+         {
+          "Id": "251464627"
+         },
+         {
+          "Id": "553048187"
+         },
+         {
+          "Id": "1026431310"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3121412406",
+         "Id": "0",
+         "GUID": "{0209DC04-203A-40C1-A3CC-C9C4B2916418}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "21981681"
+         },
+         {
+          "Id": "75666480"
+         },
+         {
+          "Id": "229446504"
+         },
+         {
+          "Id": "251464627"
+         },
+         {
+          "Id": "553048187"
+         },
+         {
+          "Id": "1026431310"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "3121412406",
+      "Name": "PlayerIndex",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PlayerIndex",
+      "GUID": "{1E617351-5936-468F-A5B6-FC1EFB3651D0}"
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "3121412406",
+      "Name": "PlayerIndex",
+      "ObjectPath": "\\Switches\\Default Work Unit\\PlayerIndex",
+      "GUID": "{0209DC04-203A-40C1-A3CC-C9C4B2916418}",
+      "GameParameterRef": {
+       "Id": "3121412406"
+      },
+      "Switches": [
+       {
+        "Id": "671679327",
+        "Name": "Hunter",
+        "ObjectPath": "\\Switches\\Default Work Unit\\PlayerIndex\\Hunter",
+        "GUID": "{A867BAC7-F348-4A13-9D99-8D6FA7492B5E}"
+       },
+       {
+        "Id": "3694479069",
+        "Name": "Prey_01",
+        "ObjectPath": "\\Switches\\Default Work Unit\\PlayerIndex\\Prey_01",
+        "GUID": "{EE6F80A2-567A-46C4-AAED-E7A2896CBFF9}"
+       },
+       {
+        "Id": "3694479070",
+        "Name": "Prey_02",
+        "ObjectPath": "\\Switches\\Default Work Unit\\PlayerIndex\\Prey_02",
+        "GUID": "{587098C4-8763-4D17-98C3-FCC074C29CD1}"
+       },
+       {
+        "Id": "3694479071",
+        "Name": "Prey_03",
+        "ObjectPath": "\\Switches\\Default Work Unit\\PlayerIndex\\Prey_03",
+        "GUID": "{12DB972D-8992-4D0E-81CF-EACA80168D2F}"
+       }
+      ]
      }
     ]
    },
@@ -80,7 +322,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{7CBCA429-BA0E-8485-414B-5C46A720D69E}",
+    "Hash": "{E0C76434-9431-DDE8-AF18-0ED726A2F324}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -106,14 +348,83 @@
     },
     "Busses": [
      {
+      "Id": "591352928",
+      "Name": "2DMusic",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\PlayerSpecific\\2DMusic",
+      "GUID": "{45CF9D86-5708-49A3-BDF6-BB8A3907A7BF}"
+     },
+     {
+      "Id": "717297682",
+      "Name": "PlayerSpecific",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\PlayerSpecific",
+      "GUID": "{70312793-C55F-4A1C-B5EC-791954AE8E26}"
+     },
+     {
+      "Id": "1973600711",
+      "Name": "Environmental",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Environmental",
+      "GUID": "{8736C5E9-36E1-4651-A66B-D8BF53CFF09A}"
+     },
+     {
       "Id": "3803692087",
       "Name": "Master Audio Bus",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     },
+     {
+      "Id": "3897422071",
+      "Name": "OpponentMusic",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\PlayerSpecific\\OpponentMusic",
+      "GUID": "{7E4B7A97-8DAA-4CA1-8D8D-D5607540022B}"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "3121412406",
+      "Name": "PlayerIndex",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PlayerIndex",
+      "GUID": "{1E617351-5936-468F-A5B6-FC1EFB3651D0}"
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "3121412406",
+      "Name": "PlayerIndex",
+      "ObjectPath": "\\Switches\\Default Work Unit\\PlayerIndex",
+      "GUID": "{0209DC04-203A-40C1-A3CC-C9C4B2916418}",
+      "GameParameterRef": {
+       "Id": "3121412406"
+      },
+      "Switches": [
+       {
+        "Id": "671679327",
+        "Name": "Hunter",
+        "ObjectPath": "\\Switches\\Default Work Unit\\PlayerIndex\\Hunter",
+        "GUID": "{A867BAC7-F348-4A13-9D99-8D6FA7492B5E}"
+       },
+       {
+        "Id": "3694479069",
+        "Name": "Prey_01",
+        "ObjectPath": "\\Switches\\Default Work Unit\\PlayerIndex\\Prey_01",
+        "GUID": "{EE6F80A2-567A-46C4-AAED-E7A2896CBFF9}"
+       },
+       {
+        "Id": "3694479070",
+        "Name": "Prey_02",
+        "ObjectPath": "\\Switches\\Default Work Unit\\PlayerIndex\\Prey_02",
+        "GUID": "{587098C4-8763-4D17-98C3-FCC074C29CD1}"
+       },
+       {
+        "Id": "3694479071",
+        "Name": "Prey_03",
+        "ObjectPath": "\\Switches\\Default Work Unit\\PlayerIndex\\Prey_03",
+        "GUID": "{12DB972D-8992-4D0E-81CF-EACA80168D2F}"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{B9A944CE-2012-1F8E-197A-7B7F1F591BA8}"
+  "FileHash": "{F21F6EDC-FF79-1073-13BB-BFFC29874DC3}"
  }
 }
