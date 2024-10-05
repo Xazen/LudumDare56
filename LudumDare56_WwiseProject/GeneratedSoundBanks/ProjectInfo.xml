@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo>
+	<Project Name="LudumDare56_WwiseProject" GUID="{52ACA392-4EF6-4AAC-A576-98FF0C68AF19}" Generator="2023.1.7.8574"/>
+	<CacheRoot>../.cache</CacheRoot>
+	<Platforms>
+		<Platform Name="Mac" GUID="{4D57D59F-2148-43E2-B770-836383F28875}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="Mac"/>
+		<Platform Name="Windows" GUID="{9C1DFE70-068C-479A-BEE1-A79B9B929CFB}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="Windows"/>
+	</Platforms>
+	<Languages>
+		<Language Name="English(US)" Id="684519430" GUID="{DB36C2AD-A289-4228-B3BE-A8224BC7D785}" Default="true" UseAsStandIn="true"/>
+	</Languages>
+	<FileHash>{79B70CBD-3C70-843B-DC96-5888D4DE3E4E}</FileHash>
+</ProjectInfo>
