@@ -4,8 +4,14 @@
 #include "MultiplayerSessionSubsystem.h"
 
 #include "OnlineSubsystem.h"
-#include "OnlineSessionSettings.h"
+
 #include "Engine/Engine.h"
+#include "Online/OnlineSessionNames.h"
+
+bool IsLan()
+{
+	return IOnlineSubsystem::Get()->GetSubsystemName() == "NULL";
+}
 
 void PrintString(const FString& Str)
 {
@@ -35,6 +41,7 @@ void UMultiplayerSessionSubsystem::Initialize(FSubsystemCollectionBase& Collecti
 		{
 			SessionInterface->OnCreateSessionCompleteDelegates.AddUObject(this, &UMultiplayerSessionSubsystem::OnCreateSessionComplete);
 			SessionInterface->OnDestroySessionCompleteDelegates.AddUObject(this, &UMultiplayerSessionSubsystem::OnDestroySessionComplete);
+			SessionInterface->OnFindSessionsCompleteDelegates.AddUObject(this, &UMultiplayerSessionSubsystem::OnFindSessionsComplete);
 		}
 	}
 }
@@ -76,13 +83,8 @@ void UMultiplayerSessionSubsystem::CreateServer(FString ServerName)
 	SessionSettings.bUseLobbiesIfAvailable = true;
 	SessionSettings.bUsesPresence = true;
 	SessionSettings.bAllowJoinViaPresence = true;
-
-	bool IsLan = false;
-	if (IOnlineSubsystem::Get()->GetSubsystemName() == "NULL")
-	{
-		IsLan = true;
-	}
-	SessionSettings.bIsLANMatch = IsLan;
+	SessionSettings.bIsLANMatch = IsLan();
+	SessionSettings.Set(FName("SERVER_NAME"), ServerName, EOnlineDataAdvertisementType::ViaOnlineServiceAndPing);
 
 	SessionInterface->CreateSession(0, MySessionName, SessionSettings);
 }
@@ -90,6 +92,19 @@ void UMultiplayerSessionSubsystem::CreateServer(FString ServerName)
 void UMultiplayerSessionSubsystem::FindServer(FString ServerName)
 {
 	PrintString(ServerName);
+
+	if (ServerName.IsEmpty())
+	{
+		PrintString("ServerName is empty");
+		return;
+	}
+
+	SessionSearch = MakeShareable(new FOnlineSessionSearch());
+	SessionSearch->bIsLanQuery = IsLan();
+	SessionSearch->MaxSearchResults = 999;
+	SessionSearch->QuerySettings.Set(SEARCH_PRESENCE, true, EOnlineComparisonOp::Equals);
+
+	SessionInterface->FindSessions(0, SessionSearch.ToSharedRef());
 }
 
 void UMultiplayerSessionSubsystem::OnCreateSessionComplete(FName SessionName, bool WasSuccessful)
@@ -110,4 +125,32 @@ void UMultiplayerSessionSubsystem::OnDestroySessionComplete(FName SessionName, b
 		CreateSessionAfterDestroy = false;
 		CreateServer(DestroyServerName);
 	}
+}
+
+void UMultiplayerSessionSubsystem::OnFindSessionsComplete(bool WasSuccessful)
+{
+	if (!WasSuccessful || !SessionSearch.IsValid()) return;
+
+	TArray<FOnlineSessionSearchResult> SearchResults = SessionSearch->SearchResults;
+	if (SearchResults.Num() <= 0)
+	{
+		PrintString("No sessions found");
+		return;
+	}
+
+	FString Msg = FString::Printf(TEXT("Found %d sessions"), SearchResults.Num());
+
+	FString FoundServerName = "not-found";
+	PrintString(Msg);
+
+	for (FOnlineSessionSearchResult SearchResult : SearchResults)
+	{
+		if (SearchResult.Session.SessionSettings.Get(FName("SERVER_NAME"), FoundServerName))
+		{
+			FString Msg2 = FString::Printf(TEXT("Found server: %s"), *FoundServerName);
+			PrintString(Msg);
+		}
+		break;
+	}
+
 }
