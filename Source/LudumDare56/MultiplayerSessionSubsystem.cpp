@@ -3,15 +3,14 @@
 
 #include "MultiplayerSessionSubsystem.h"
 
+#include "OnlineSubsystem.h"
 #include "Engine/Engine.h"
-
-class FString;
 
 void PrintString(const FString& Str)
 {
 	if (GEngine)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, Str);
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Cyan, Str);
 	}
 }
 
@@ -22,7 +21,18 @@ UMultiplayerSessionSubsystem::UMultiplayerSessionSubsystem()
 
 void UMultiplayerSessionSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 {
-	PrintString("Initialize");
+	IOnlineSubsystem* OnlineSubsystem = IOnlineSubsystem::Get();
+	if (OnlineSubsystem)
+	{
+		FString Subsystemname = OnlineSubsystem->GetSubsystemName().ToString();
+		PrintString("OnlineSubsystem: " + Subsystemname);
+
+		SessionInterface = OnlineSubsystem->GetSessionInterface();
+		if (SessionInterface.IsValid())
+		{
+			PrintString("SessionInterface is valid");
+		}
+	}
 }
 
 void UMultiplayerSessionSubsystem::Deinitialize()
