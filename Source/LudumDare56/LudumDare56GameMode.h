@@ -10,9 +10,10 @@ UCLASS(minimalapi)
 class ALudumDare56GameMode : public AGameModeBase
 {
 	GENERATED_BODY()
+	ALudumDare56GameMode(const FObjectInitializer& ObjectInitializer);
+	virtual UClass* GetDefaultPawnClassForController_Implementation(AController* InController) override;
 
 public:
-	ALudumDare56GameMode();
 
 	UFUNCTION(BlueprintCallable)
 	void HostLANGame();
