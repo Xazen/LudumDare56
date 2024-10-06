@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{E0C76434-9431-DDE8-AF18-0ED726A2F324}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{C56F0167-3F5E-CBFC-214F-42A53DC5FEE6}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<Custom>
+					<Plugin Id="57310974" Name="Peak Limiter (Custom)" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\[Effect Slot [0]: (Peak Limiter)]\Peak Limiter (Custom)" GUID="{BE4E9F71-EDE1-4D32-BF1A-CB54B6B89E22}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</Custom>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" ObjectPath="\Audio Devices\Default Work Unit\No_Output" GUID="{323741DB-A6F6-43DF-B8C5-0F05682A6393}" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" ObjectPath="\Audio Devices\Default Work Unit\System" GUID="{6CE6DF60-0937-47A6-9EFC-FD4D810D7AFC}" LibName="System" LibId="11403271"/>
@@ -15,10 +18,17 @@
 				<Bus Id="591352928" Name="2DMusic" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerSpecific\2DMusic" GUID="{45CF9D86-5708-49A3-BDF6-BB8A3907A7BF}"/>
 				<Bus Id="717297682" Name="PlayerSpecific" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerSpecific" GUID="{70312793-C55F-4A1C-B5EC-791954AE8E26}"/>
 				<Bus Id="1973600711" Name="Environmental" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Environmental" GUID="{8736C5E9-36E1-4651-A66B-D8BF53CFF09A}"/>
-				<Bus Id="3803692087" Name="Master Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus" GUID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
+				<Bus Id="3803692087" Name="Master Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus" GUID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="57310974"/>
+						</Custom>
+					</PluginRefs>
+				</Bus>
 				<Bus Id="3897422071" Name="OpponentMusic" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerSpecific\OpponentMusic" GUID="{7E4B7A97-8DAA-4CA1-8D8D-D5607540022B}"/>
 			</Busses>
 			<GameParameters>
+				<GameParameter Id="286661824" Name="Music_Distance" ObjectPath="\Game Parameters\Default Work Unit\Music_Distance" GUID="{0E48E239-1410-4A71-8B8C-D9B384853B00}"/>
 				<GameParameter Id="3121412406" Name="PlayerIndex" ObjectPath="\Game Parameters\Default Work Unit\PlayerIndex" GUID="{1E617351-5936-468F-A5B6-FC1EFB3651D0}"/>
 			</GameParameters>
 			<SwitchGroups>
@@ -34,5 +44,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6CA85E30-95CF-2814-C9D5-5597B329563F}</FileHash>
+	<FileHash>{71063ABD-C040-70EE-1020-A3A7F3D4164F}</FileHash>
 </SoundBanksInfo>

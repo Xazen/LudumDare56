@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" GUID="{9764593B-6512-4C1D-B6C0-D9453C0D4A61}" Language="SFX" Hash="{933992A8-10CE-0DD7-2FAF-BD26356221AD}">
+		<SoundBank Id="133642231" Type="User" GUID="{9764593B-6512-4C1D-B6C0-D9453C0D4A61}" Language="SFX" Hash="{E2789F8C-DFBE-63B2-6D88-8EBAF4CD8A78}">
 			<ObjectPath>\SoundBanks\Default Work Unit\General</ObjectPath>
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
@@ -56,81 +56,41 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="3959090300" Name="Play_Big_Music" ObjectPath="\Events\Default Work Unit\Play_Big_Music" GUID="{5CE446E2-BBCD-435B-889E-CECDA9FE0205}" MaxAttenuation="5000" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="170286855"/>
+						<MediaRef Id="234216803"/>
+						<MediaRef Id="319399716"/>
+						<MediaRef Id="624560513"/>
+						<MediaRef Id="777875941"/>
+						<MediaRef Id="971307101"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music" GUID="{D0AEE4F7-87A8-4589-8241-24600350F313}" DurationType="Infinite">
-					<SwitchContainers>
-						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="3121412406" Id="671679327" GUID="{A867BAC7-F348-4A13-9D99-8D6FA7492B5E}"/>
-							<MediaRefs>
-								<MediaRef Id="170286855"/>
-								<MediaRef Id="234216803"/>
-								<MediaRef Id="319399716"/>
-								<MediaRef Id="624560513"/>
-								<MediaRef Id="777875941"/>
-								<MediaRef Id="971307101"/>
-							</MediaRefs>
-						</SwitchContainer>
-						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="3121412406" Id="3694479069" GUID="{EE6F80A2-567A-46C4-AAED-E7A2896CBFF9}"/>
-							<MediaRefs>
-								<MediaRef Id="21981681"/>
-								<MediaRef Id="75666480"/>
-								<MediaRef Id="229446504"/>
-								<MediaRef Id="251464627"/>
-								<MediaRef Id="553048187"/>
-								<MediaRef Id="1026431310"/>
-							</MediaRefs>
-						</SwitchContainer>
-						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="3121412406" Id="3694479070" GUID="{587098C4-8763-4D17-98C3-FCC074C29CD1}"/>
-							<MediaRefs>
-								<MediaRef Id="21981681"/>
-								<MediaRef Id="75666480"/>
-								<MediaRef Id="229446504"/>
-								<MediaRef Id="251464627"/>
-								<MediaRef Id="553048187"/>
-								<MediaRef Id="1026431310"/>
-							</MediaRefs>
-						</SwitchContainer>
-						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="3121412406" Id="3694479071" GUID="{12DB972D-8992-4D0E-81CF-EACA80168D2F}"/>
-							<MediaRefs>
-								<MediaRef Id="21981681"/>
-								<MediaRef Id="75666480"/>
-								<MediaRef Id="229446504"/>
-								<MediaRef Id="251464627"/>
-								<MediaRef Id="553048187"/>
-								<MediaRef Id="1026431310"/>
-							</MediaRefs>
-						</SwitchContainer>
-						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="3121412406" Id="0" GUID="{0209DC04-203A-40C1-A3CC-C9C4B2916418}"/>
-							<MediaRefs>
-								<MediaRef Id="21981681"/>
-								<MediaRef Id="75666480"/>
-								<MediaRef Id="229446504"/>
-								<MediaRef Id="251464627"/>
-								<MediaRef Id="553048187"/>
-								<MediaRef Id="1026431310"/>
-							</MediaRefs>
-						</SwitchContainer>
-					</SwitchContainers>
+					<MediaRefs>
+						<MediaRef Id="21981681"/>
+						<MediaRef Id="75666480"/>
+						<MediaRef Id="229446504"/>
+						<MediaRef Id="251464627"/>
+						<MediaRef Id="553048187"/>
+						<MediaRef Id="1026431310"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1861514260" Name="Play_Tiny_Music" ObjectPath="\Events\Default Work Unit\Play_Tiny_Music" GUID="{D39CC261-5280-46FE-B09B-4F2D3C9CF4ED}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="21981681"/>
+						<MediaRef Id="75666480"/>
+						<MediaRef Id="229446504"/>
+						<MediaRef Id="251464627"/>
+						<MediaRef Id="553048187"/>
+						<MediaRef Id="1026431310"/>
+					</MediaRefs>
 				</Event>
 			</Events>
 			<GameParameters>
-				<GameParameter Id="3121412406" Name="PlayerIndex" ObjectPath="\Game Parameters\Default Work Unit\PlayerIndex" GUID="{1E617351-5936-468F-A5B6-FC1EFB3651D0}"/>
+				<GameParameter Id="286661824" Name="Music_Distance" ObjectPath="\Game Parameters\Default Work Unit\Music_Distance" GUID="{0E48E239-1410-4A71-8B8C-D9B384853B00}"/>
 			</GameParameters>
-			<SwitchGroups>
-				<SwitchGroup Id="3121412406" Name="PlayerIndex" ObjectPath="\Switches\Default Work Unit\PlayerIndex" GUID="{0209DC04-203A-40C1-A3CC-C9C4B2916418}">
-					<GameParameterRef Id="3121412406"/>
-					<Switches>
-						<Switch Id="671679327" Name="Hunter" ObjectPath="\Switches\Default Work Unit\PlayerIndex\Hunter" GUID="{A867BAC7-F348-4A13-9D99-8D6FA7492B5E}"/>
-						<Switch Id="3694479069" Name="Prey_01" ObjectPath="\Switches\Default Work Unit\PlayerIndex\Prey_01" GUID="{EE6F80A2-567A-46C4-AAED-E7A2896CBFF9}"/>
-						<Switch Id="3694479070" Name="Prey_02" ObjectPath="\Switches\Default Work Unit\PlayerIndex\Prey_02" GUID="{587098C4-8763-4D17-98C3-FCC074C29CD1}"/>
-						<Switch Id="3694479071" Name="Prey_03" ObjectPath="\Switches\Default Work Unit\PlayerIndex\Prey_03" GUID="{12DB972D-8992-4D0E-81CF-EACA80168D2F}"/>
-					</Switches>
-				</SwitchGroup>
-			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{31DD6975-3666-EA23-339F-3BE7D7C7B3CD}</FileHash>
+	<FileHash>{6A1CD8B5-78F6-8753-C64D-D17DABE7EA95}</FileHash>
 </SoundBanksInfo>

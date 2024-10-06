@@ -18,7 +18,7 @@
     "Type": "User",
     "GUID": "{9764593B-6512-4C1D-B6C0-D9453C0D4A61}",
     "Language": "SFX",
-    "Hash": "{933992A8-10CE-0DD7-2FAF-BD26356221AD}",
+    "Hash": "{E2789F8C-DFBE-63B2-6D88-8EBAF4CD8A78}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\General",
     "ShortName": "General",
     "Path": "General.bnk",
@@ -122,198 +122,94 @@
     ],
     "Events": [
      {
+      "Id": "3959090300",
+      "Name": "Play_Big_Music",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Big_Music",
+      "GUID": "{5CE446E2-BBCD-435B-889E-CECDA9FE0205}",
+      "MaxAttenuation": "5000",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "170286855"
+       },
+       {
+        "Id": "234216803"
+       },
+       {
+        "Id": "319399716"
+       },
+       {
+        "Id": "624560513"
+       },
+       {
+        "Id": "777875941"
+       },
+       {
+        "Id": "971307101"
+       }
+      ]
+     },
+     {
       "Id": "2932040671",
       "Name": "Play_Music",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Music",
       "GUID": "{D0AEE4F7-87A8-4589-8241-24600350F313}",
       "DurationType": "Infinite",
-      "SwitchContainers": [
+      "MediaRefs": [
        {
-        "SwitchValue": {
-         "GroupType": "Switch",
-         "GroupId": "3121412406",
-         "Id": "671679327",
-         "GUID": "{A867BAC7-F348-4A13-9D99-8D6FA7492B5E}"
-        },
-        "MediaRefs": [
-         {
-          "Id": "170286855"
-         },
-         {
-          "Id": "234216803"
-         },
-         {
-          "Id": "319399716"
-         },
-         {
-          "Id": "624560513"
-         },
-         {
-          "Id": "777875941"
-         },
-         {
-          "Id": "971307101"
-         }
-        ]
+        "Id": "21981681"
        },
        {
-        "SwitchValue": {
-         "GroupType": "Switch",
-         "GroupId": "3121412406",
-         "Id": "3694479069",
-         "GUID": "{EE6F80A2-567A-46C4-AAED-E7A2896CBFF9}"
-        },
-        "MediaRefs": [
-         {
-          "Id": "21981681"
-         },
-         {
-          "Id": "75666480"
-         },
-         {
-          "Id": "229446504"
-         },
-         {
-          "Id": "251464627"
-         },
-         {
-          "Id": "553048187"
-         },
-         {
-          "Id": "1026431310"
-         }
-        ]
+        "Id": "75666480"
        },
        {
-        "SwitchValue": {
-         "GroupType": "Switch",
-         "GroupId": "3121412406",
-         "Id": "3694479070",
-         "GUID": "{587098C4-8763-4D17-98C3-FCC074C29CD1}"
-        },
-        "MediaRefs": [
-         {
-          "Id": "21981681"
-         },
-         {
-          "Id": "75666480"
-         },
-         {
-          "Id": "229446504"
-         },
-         {
-          "Id": "251464627"
-         },
-         {
-          "Id": "553048187"
-         },
-         {
-          "Id": "1026431310"
-         }
-        ]
+        "Id": "229446504"
        },
        {
-        "SwitchValue": {
-         "GroupType": "Switch",
-         "GroupId": "3121412406",
-         "Id": "3694479071",
-         "GUID": "{12DB972D-8992-4D0E-81CF-EACA80168D2F}"
-        },
-        "MediaRefs": [
-         {
-          "Id": "21981681"
-         },
-         {
-          "Id": "75666480"
-         },
-         {
-          "Id": "229446504"
-         },
-         {
-          "Id": "251464627"
-         },
-         {
-          "Id": "553048187"
-         },
-         {
-          "Id": "1026431310"
-         }
-        ]
+        "Id": "251464627"
        },
        {
-        "SwitchValue": {
-         "GroupType": "Switch",
-         "GroupId": "3121412406",
-         "Id": "0",
-         "GUID": "{0209DC04-203A-40C1-A3CC-C9C4B2916418}"
-        },
-        "MediaRefs": [
-         {
-          "Id": "21981681"
-         },
-         {
-          "Id": "75666480"
-         },
-         {
-          "Id": "229446504"
-         },
-         {
-          "Id": "251464627"
-         },
-         {
-          "Id": "553048187"
-         },
-         {
-          "Id": "1026431310"
-         }
-        ]
+        "Id": "553048187"
+       },
+       {
+        "Id": "1026431310"
+       }
+      ]
+     },
+     {
+      "Id": "1861514260",
+      "Name": "Play_Tiny_Music",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Tiny_Music",
+      "GUID": "{D39CC261-5280-46FE-B09B-4F2D3C9CF4ED}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "21981681"
+       },
+       {
+        "Id": "75666480"
+       },
+       {
+        "Id": "229446504"
+       },
+       {
+        "Id": "251464627"
+       },
+       {
+        "Id": "553048187"
+       },
+       {
+        "Id": "1026431310"
        }
       ]
      }
     ],
     "GameParameters": [
      {
-      "Id": "3121412406",
-      "Name": "PlayerIndex",
-      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PlayerIndex",
-      "GUID": "{1E617351-5936-468F-A5B6-FC1EFB3651D0}"
-     }
-    ],
-    "SwitchGroups": [
-     {
-      "Id": "3121412406",
-      "Name": "PlayerIndex",
-      "ObjectPath": "\\Switches\\Default Work Unit\\PlayerIndex",
-      "GUID": "{0209DC04-203A-40C1-A3CC-C9C4B2916418}",
-      "GameParameterRef": {
-       "Id": "3121412406"
-      },
-      "Switches": [
-       {
-        "Id": "671679327",
-        "Name": "Hunter",
-        "ObjectPath": "\\Switches\\Default Work Unit\\PlayerIndex\\Hunter",
-        "GUID": "{A867BAC7-F348-4A13-9D99-8D6FA7492B5E}"
-       },
-       {
-        "Id": "3694479069",
-        "Name": "Prey_01",
-        "ObjectPath": "\\Switches\\Default Work Unit\\PlayerIndex\\Prey_01",
-        "GUID": "{EE6F80A2-567A-46C4-AAED-E7A2896CBFF9}"
-       },
-       {
-        "Id": "3694479070",
-        "Name": "Prey_02",
-        "ObjectPath": "\\Switches\\Default Work Unit\\PlayerIndex\\Prey_02",
-        "GUID": "{587098C4-8763-4D17-98C3-FCC074C29CD1}"
-       },
-       {
-        "Id": "3694479071",
-        "Name": "Prey_03",
-        "ObjectPath": "\\Switches\\Default Work Unit\\PlayerIndex\\Prey_03",
-        "GUID": "{12DB972D-8992-4D0E-81CF-EACA80168D2F}"
-       }
-      ]
+      "Id": "286661824",
+      "Name": "Music_Distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Music_Distance",
+      "GUID": "{0E48E239-1410-4A71-8B8C-D9B384853B00}"
      }
     ]
    },
@@ -322,11 +218,21 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{E0C76434-9431-DDE8-AF18-0ED726A2F324}",
+    "Hash": "{C56F0167-3F5E-CBFC-214F-42A53DC5FEE6}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
+     "Custom": [
+      {
+       "Id": "57310974",
+       "Name": "Peak Limiter (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\[Effect Slot [0]: (Peak Limiter)]\\Peak Limiter (Custom)",
+       "GUID": "{BE4E9F71-EDE1-4D32-BF1A-CB54B6B89E22}",
+       "LibName": "Wwise Peak Limiter",
+       "LibId": "7208963"
+      }
+     ],
      "AudioDevices": [
       {
        "Id": "2317455096",
@@ -369,7 +275,14 @@
       "Id": "3803692087",
       "Name": "Master Audio Bus",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
-      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "57310974"
+        }
+       ]
+      }
      },
      {
       "Id": "3897422071",
@@ -379,6 +292,12 @@
      }
     ],
     "GameParameters": [
+     {
+      "Id": "286661824",
+      "Name": "Music_Distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Music_Distance",
+      "GUID": "{0E48E239-1410-4A71-8B8C-D9B384853B00}"
+     },
      {
       "Id": "3121412406",
       "Name": "PlayerIndex",
@@ -425,6 +344,6 @@
     ]
    }
   ],
-  "FileHash": "{F21F6EDC-FF79-1073-13BB-BFFC29874DC3}"
+  "FileHash": "{ACC8692F-ACEC-FE3E-059B-6706F968A4C0}"
  }
 }
