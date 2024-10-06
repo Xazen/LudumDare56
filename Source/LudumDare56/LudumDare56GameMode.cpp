@@ -14,13 +14,17 @@ ALudumDare56GameMode::ALudumDare56GameMode(const FObjectInitializer& ObjectIniti
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
 
-	PlayerControllerClass = AMyPlayerController::StaticClass();
+	static ConstructorHelpers::FClassFinder<AMyPlayerController> MyPlayerController(TEXT("/Game/PlayerController/BP_PlayerController"));
+	if (MyPlayerController.Class != NULL)
+	{
+		PlayerControllerClass = MyPlayerController.Class;
+	}
 }
 
 UClass* ALudumDare56GameMode::GetDefaultPawnClassForController_Implementation(AController* InController)
 {
 	AMyPlayerController* PlayerController = Cast<AMyPlayerController>(InController);
-	if (PlayerController)
+	if (PlayerController && PlayerController->GetPlayerPawnClass() != NULL)
 	{
 		return PlayerController->GetPlayerPawnClass();
 	}

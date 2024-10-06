@@ -3,20 +3,34 @@
 
 #include "MyPlayerController.h"
 
+#include "LudumDare56GameMode.h"
+#include "MultiplayerSessionSubsystem.h"
 #include "GameFramework/GameModeBase.h"
+#include "Kismet/GameplayStatics.h"
 #include "Net/UnrealNetwork.h"
 
 AMyPlayerController::AMyPlayerController(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
 {
-	HunterPawn = nullptr;
-	PreyPawn = nullptr;
-
+	MyPawnClass = nullptr;
 	bReplicates = true;
 }
 
 void AMyPlayerController::BeginPlay()
 {
+	ALudumDare56GameMode* GameMode = Cast<ALudumDare56GameMode>(UGameplayStatics::GetGameMode(GetWorld()));
+	if (GameMode)
+	{
+		if (GetGameInstance()->GetSubsystem<UMultiplayerSessionSubsystem>()->IsHunter)
+		{
+			SetPlayerHunter();
+		}
+		else
+		{
+			SetPlayerPrey();
+		}
+	}
+
 }
 
 
@@ -41,7 +55,12 @@ void AMyPlayerController::DeterminePawnClass_Implementation(TSubclassOf<APawn> I
 void AMyPlayerController::ServerSetPawn_Implementation(TSubclassOf<APawn> InPawnClass)
 {
 	MyPawnClass = InPawnClass;
-	GetWorld()->GetAuthGameMode()->RestartPlayer(this);
+
+	ALudumDare56GameMode* GameMode = Cast<ALudumDare56GameMode>(GetWorld()->GetAuthGameMode());
+	if (GameMode)
+	{
+		GameMode->RestartPlayer(this);
+	}
 }
 
 // Replication
