@@ -5,10 +5,32 @@
 			<ChildrenList>
 				<Event Name="Play_Music" ID="{D0AEE4F7-87A8-4589-8241-24600350F313}">
 					<ChildrenList>
-						<Action Name="" ID="{CB68206F-BB47-4F69-9832-0FB994589BF5}" ShortID="1020472668">
+						<Action Name="" ID="{D7CE654B-E342-4B16-BF26-8DDA81F5EE06}" ShortID="1036559113">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Music" ID="{7B52C2C7-6763-473F-8187-1CF449EB3F33}" WorkUnitID="{F74A50C0-B08D-48F0-AA9F-907DA97341E3}"/>
+									<ObjectRef Name="Tiny_Music" ID="{B7C31946-7E9C-4515-9242-82D8FD29FE6A}" WorkUnitID="{F74A50C0-B08D-48F0-AA9F-907DA97341E3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Big_Music" ID="{5CE446E2-BBCD-435B-889E-CECDA9FE0205}">
+					<ChildrenList>
+						<Action Name="" ID="{75F04132-4082-4C02-8BCD-3A877E1DB4B1}" ShortID="677677265">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Big_Music" ID="{11C801B7-0F68-461C-8679-4383B1772031}" WorkUnitID="{F74A50C0-B08D-48F0-AA9F-907DA97341E3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Tiny_Music" ID="{D39CC261-5280-46FE-B09B-4F2D3C9CF4ED}">
+					<ChildrenList>
+						<Action Name="" ID="{4BEB954D-9071-4088-A721-95792D1D586C}" ShortID="712211781">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Tiny_Music" ID="{B7C31946-7E9C-4515-9242-82D8FD29FE6A}" WorkUnitID="{F74A50C0-B08D-48F0-AA9F-907DA97341E3}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

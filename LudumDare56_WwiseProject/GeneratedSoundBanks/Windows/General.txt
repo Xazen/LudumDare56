@@ -1,29 +1,22 @@
 Event	ID	Name			Wwise Object Path	Notes
+	1861514260	Play_Tiny_Music			\Default Work Unit\Play_Tiny_Music	
 	2932040671	Play_Music			\Default Work Unit\Play_Music	
-
-Switch Group	ID	Name			Wwise Object Path	Notes
-	3121412406	PlayerIndex			\Default Work Unit\PlayerIndex	
-
-Switch	ID	Name	Switch Group			Notes
-	671679327	Hunter	PlayerIndex			
-	3694479069	Prey_01	PlayerIndex			
-	3694479070	Prey_02	PlayerIndex			
-	3694479071	Prey_03	PlayerIndex			
+	3959090300	Play_Big_Music			\Default Work Unit\Play_Big_Music	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
-	3121412406	PlayerIndex			\Default Work Unit\PlayerIndex	
+	286661824	Music_Distance			\Default Work Unit\Music_Distance	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	21981681	TinyTrack_StressLvl_2	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\TinyTrack_StressLvl_2_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Tiny_Music\Tiny_Music\TinyTrack_StressLvl_2		716195
-	75666480	TinyTrack_Hunter_1	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\TinyTrack_Hunter_1_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Tiny_Music\Tiny_Music\TinyTrack_Hunter_1		600830
-	170286855	BigTrack_StressLvl_3	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\BigTrack_StressLvl_3_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Big_Music\Big_Music\BigTrack_StressLvl_3		818068
-	229446504	TinyTrack_StressLvl_3	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\TinyTrack_StressLvl_3_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Tiny_Music\Tiny_Music\TinyTrack_StressLvl_3		824841
-	234216803	BigTrack_Lead	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\BigTrack_Lead_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Big_Music\Big_Music\BigTrack_Lead		821239
-	251464627	TinyTrack_Hunter_2	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\TinyTrack_Hunter_2_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Tiny_Music\Tiny_Music\TinyTrack_Hunter_2		722720
-	319399716	BigTrack_Base	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\BigTrack_Base_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Big_Music\Big_Music\BigTrack_Base		667675
-	553048187	TinyTrack_StressLvl_1	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\TinyTrack_StressLvl_1_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Tiny_Music\Tiny_Music\TinyTrack_StressLvl_1		784825
-	624560513	BigTrack_StressLvl_1	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\BigTrack_StressLvl_1_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Big_Music\Big_Music\BigTrack_StressLvl_1		759018
-	777875941	BigTrack_Prey	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\BigTrack_Prey_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Big_Music\Big_Music\BigTrack_Prey		832854
-	971307101	BigTrack_StressLvl_2	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\BigTrack_StressLvl_2_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Big_Music\Big_Music\BigTrack_StressLvl_2		801982
-	1026431310	TinyTrack_Base	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\TinyTrack_Base_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Tiny_Music\Tiny_Music\TinyTrack_Base		826088
+	21981681	TinyTrack_StressLvl_2	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\TinyTrack_StressLvl_2_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Tiny_Music\Tiny_Music\TinyTrack_StressLvl_2		716195
+	75666480	TinyTrack_Hunter_1	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\TinyTrack_Hunter_1_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Tiny_Music\Tiny_Music\TinyTrack_Hunter_1		600830
+	170286855	BigTrack_StressLvl_3	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\BigTrack_StressLvl_3_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Big_Music\Big_Music\BigTrack_StressLvl_3		818068
+	229446504	TinyTrack_StressLvl_3	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\TinyTrack_StressLvl_3_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Tiny_Music\Tiny_Music\TinyTrack_StressLvl_3		824841
+	234216803	BigTrack_Lead	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\BigTrack_Lead_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Big_Music\Big_Music\BigTrack_Lead		821239
+	251464627	TinyTrack_Hunter_2	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\TinyTrack_Hunter_2_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Tiny_Music\Tiny_Music\TinyTrack_Hunter_2		722720
+	319399716	BigTrack_Base	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\BigTrack_Base_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Big_Music\Big_Music\BigTrack_Base		667675
+	553048187	TinyTrack_StressLvl_1	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\TinyTrack_StressLvl_1_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Tiny_Music\Tiny_Music\TinyTrack_StressLvl_1		784825
+	624560513	BigTrack_StressLvl_1	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\BigTrack_StressLvl_1_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Big_Music\Big_Music\BigTrack_StressLvl_1		759018
+	777875941	BigTrack_Prey	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\BigTrack_Prey_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Big_Music\Big_Music\BigTrack_Prey		832854
+	971307101	BigTrack_StressLvl_2	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\BigTrack_StressLvl_2_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Big_Music\Big_Music\BigTrack_StressLvl_2		801982
+	1026431310	TinyTrack_Base	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\TinyTrack_Base_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Tiny_Music\Tiny_Music\TinyTrack_Base		826088
 
