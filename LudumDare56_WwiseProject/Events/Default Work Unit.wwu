@@ -3,23 +3,12 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{C42410C6-48F7-48B6-9CE2-D2C2163BAE2D}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_tempMusic" ID="{61DCE32F-3A90-4C0A-BC4F-DCA6D07C3EE8}">
+				<Event Name="Play_Music" ID="{D0AEE4F7-87A8-4589-8241-24600350F313}">
 					<ChildrenList>
-						<Action Name="" ID="{DFB8C376-DC50-4911-8CA6-1354D94DA2EB}" ShortID="464246550">
+						<Action Name="" ID="{CB68206F-BB47-4F69-9832-0FB994589BF5}" ShortID="1020472668">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="tempMusic" ID="{6D9A1206-0B7B-4A63-BDB2-BBE4348450A3}" WorkUnitID="{F74A50C0-B08D-48F0-AA9F-907DA97341E3}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_testTone" ID="{08F417DB-07D6-4FB3-9068-2274F4C3661F}">
-					<ChildrenList>
-						<Action Name="" ID="{864C8B04-B978-4020-A974-32F942E259EC}" ShortID="982895692">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="testTone" ID="{2628FF87-029E-4D01-8A5F-BFE92ED427EF}" WorkUnitID="{4E32E2E0-B069-4926-98E5-A425C28B87E1}"/>
+									<ObjectRef Name="Music" ID="{7B52C2C7-6763-473F-8187-1CF449EB3F33}" WorkUnitID="{F74A50C0-B08D-48F0-AA9F-907DA97341E3}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

@@ -9,6 +9,22 @@
 							<ObjectRef Name="System" ID="{6CE6DF60-0937-47A6-9EFC-FD4D810D7AFC}" WorkUnitID="{B466F64A-DC0C-42C7-AD3F-D4369C41B375}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Environmental" ID="{8736C5E9-36E1-4651-A66B-D8BF53CFF09A}"/>
+						<Bus Name="PlayerSpecific" ID="{70312793-C55F-4A1C-B5EC-791954AE8E26}">
+							<ChildrenList>
+								<Bus Name="2DMusic" ID="{45CF9D86-5708-49A3-BDF6-BB8A3907A7BF}"/>
+								<Bus Name="OpponentMusic" ID="{7E4B7A97-8DAA-4CA1-8D8D-D5607540022B}">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
+									</PropertyList>
+									<PositioningInfo>
+										<Position Name="" ID="{2EA2AA32-CE6A-46A3-A9A9-877B5B9CD854}"/>
+									</PositioningInfo>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

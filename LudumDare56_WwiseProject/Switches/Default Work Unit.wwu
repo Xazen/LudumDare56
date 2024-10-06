@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F1B91E95-AD65-43F3-A7F8-1C25C96E6EF5}" SchemaVersion="119">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{F1B91E95-AD65-43F3-A7F8-1C25C96E6EF5}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{F1B91E95-AD65-43F3-A7F8-1C25C96E6EF5}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="PlayerIndex" ID="{0209DC04-203A-40C1-A3CC-C9C4B2916418}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Hunter" ID="{A867BAC7-F348-4A13-9D99-8D6FA7492B5E}"/>
+						<Switch Name="Prey_01" ID="{EE6F80A2-567A-46C4-AAED-E7A2896CBFF9}"/>
+						<Switch Name="Prey_02" ID="{587098C4-8763-4D17-98C3-FCC074C29CD1}"/>
+						<Switch Name="Prey_03" ID="{12DB972D-8992-4D0E-81CF-EACA80168D2F}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="PlayerIndex" ID="{1E617351-5936-468F-A5B6-FC1EFB3651D0}"/>
+						<Curve Name="" ID="{88A44CBF-DF71-4C91-B184-2431EAAC0BB0}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>1.89658</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>2.90065</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>3.90228</XPos>
+									<YPos>4</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>4</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

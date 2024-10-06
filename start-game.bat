@@ -1,1 +1,1 @@
-"C:\Program Files\Epic Games\UE_5.4\Engine\Binaries\Win64\UnrealEditor.exe" "C:\Unity\Projects\ludumdare56\LudumDare56\LudumDare56.uproject" -game -ResX=960 -log -WINDOWED -NOSTEAM
+"C:\Program Files\Epic Games\UE_5.4\Engine\Binaries\Win64\UnrealEditor.exe" "F:\GitForque\LudumDare56\LudumDare56.uproject" -game -ResX=960 -log -WINDOWED -NOSTEAM

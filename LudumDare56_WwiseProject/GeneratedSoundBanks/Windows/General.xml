@@ -1,36 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" GUID="{9764593B-6512-4C1D-B6C0-D9453C0D4A61}" Language="SFX" Hash="{9FCE66E0-320A-DB05-0EB7-02BB6944E598}">
+		<SoundBank Id="133642231" Type="User" GUID="{9764593B-6512-4C1D-B6C0-D9453C0D4A61}" Language="SFX" Hash="{933992A8-10CE-0DD7-2FAF-BD26356221AD}">
 			<ObjectPath>\SoundBanks\Default Work Unit\General</ObjectPath>
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
-				<File Id="1011997918" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Music\Temp Music.wav</ShortName>
-					<CachePath>SFX/Music/Temp Music_FBC78EF0.wem</CachePath>
+				<File Id="21981681" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\TinyTrack_StressLvl_2.wav</ShortName>
+					<CachePath>SFX/Music/TinyTrack_StressLvl_2_56CEF360.wem</CachePath>
+				</File>
+				<File Id="75666480" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\TinyTrack_Hunter_1.wav</ShortName>
+					<CachePath>SFX/Music/TinyTrack_Hunter_1_56CEF360.wem</CachePath>
+				</File>
+				<File Id="170286855" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\BigTrack_StressLvl_3.wav</ShortName>
+					<CachePath>SFX/Music/BigTrack_StressLvl_3_56CEF360.wem</CachePath>
+				</File>
+				<File Id="229446504" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\TinyTrack_StressLvl_3.wav</ShortName>
+					<CachePath>SFX/Music/TinyTrack_StressLvl_3_56CEF360.wem</CachePath>
+				</File>
+				<File Id="234216803" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\BigTrack_Lead.wav</ShortName>
+					<CachePath>SFX/Music/BigTrack_Lead_56CEF360.wem</CachePath>
+				</File>
+				<File Id="251464627" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\TinyTrack_Hunter_2.wav</ShortName>
+					<CachePath>SFX/Music/TinyTrack_Hunter_2_56CEF360.wem</CachePath>
+				</File>
+				<File Id="319399716" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\BigTrack_Base.wav</ShortName>
+					<CachePath>SFX/Music/BigTrack_Base_56CEF360.wem</CachePath>
+				</File>
+				<File Id="553048187" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\TinyTrack_StressLvl_1.wav</ShortName>
+					<CachePath>SFX/Music/TinyTrack_StressLvl_1_56CEF360.wem</CachePath>
+				</File>
+				<File Id="624560513" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\BigTrack_StressLvl_1.wav</ShortName>
+					<CachePath>SFX/Music/BigTrack_StressLvl_1_56CEF360.wem</CachePath>
+				</File>
+				<File Id="777875941" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\BigTrack_Prey.wav</ShortName>
+					<CachePath>SFX/Music/BigTrack_Prey_56CEF360.wem</CachePath>
+				</File>
+				<File Id="971307101" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\BigTrack_StressLvl_2.wav</ShortName>
+					<CachePath>SFX/Music/BigTrack_StressLvl_2_56CEF360.wem</CachePath>
+				</File>
+				<File Id="1026431310" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\TinyTrack_Base.wav</ShortName>
+					<CachePath>SFX/Music/TinyTrack_Base_56CEF360.wem</CachePath>
 				</File>
 			</Media>
-			<Plugins>
-				<Custom>
-					<Plugin Id="891453934" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Default Work Unit\testTone\Tone Generator" GUID="{C83069F8-53A7-4DF2-A56A-CEBE5CAC2C9F}" LibName="Wwise Tone Generator" LibId="6684674"/>
-				</Custom>
-			</Plugins>
 			<Events>
-				<Event Id="2580001413" Name="Play_tempMusic" ObjectPath="\Events\Default Work Unit\Play_tempMusic" GUID="{61DCE32F-3A90-4C0A-BC4F-DCA6D07C3EE8}" DurationType="OneShot" DurationMin="68.207954" DurationMax="68.207954">
-					<MediaRefs>
-						<MediaRef Id="1011997918"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="3534139762" Name="Play_testTone" ObjectPath="\Events\Default Work Unit\Play_testTone" GUID="{08F417DB-07D6-4FB3-9068-2274F4C3661F}" DurationType="Infinite">
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="891453934"/>
-						</Custom>
-					</PluginRefs>
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music" GUID="{D0AEE4F7-87A8-4589-8241-24600350F313}" DurationType="Infinite">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3121412406" Id="671679327" GUID="{A867BAC7-F348-4A13-9D99-8D6FA7492B5E}"/>
+							<MediaRefs>
+								<MediaRef Id="170286855"/>
+								<MediaRef Id="234216803"/>
+								<MediaRef Id="319399716"/>
+								<MediaRef Id="624560513"/>
+								<MediaRef Id="777875941"/>
+								<MediaRef Id="971307101"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3121412406" Id="3694479069" GUID="{EE6F80A2-567A-46C4-AAED-E7A2896CBFF9}"/>
+							<MediaRefs>
+								<MediaRef Id="21981681"/>
+								<MediaRef Id="75666480"/>
+								<MediaRef Id="229446504"/>
+								<MediaRef Id="251464627"/>
+								<MediaRef Id="553048187"/>
+								<MediaRef Id="1026431310"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3121412406" Id="3694479070" GUID="{587098C4-8763-4D17-98C3-FCC074C29CD1}"/>
+							<MediaRefs>
+								<MediaRef Id="21981681"/>
+								<MediaRef Id="75666480"/>
+								<MediaRef Id="229446504"/>
+								<MediaRef Id="251464627"/>
+								<MediaRef Id="553048187"/>
+								<MediaRef Id="1026431310"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3121412406" Id="3694479071" GUID="{12DB972D-8992-4D0E-81CF-EACA80168D2F}"/>
+							<MediaRefs>
+								<MediaRef Id="21981681"/>
+								<MediaRef Id="75666480"/>
+								<MediaRef Id="229446504"/>
+								<MediaRef Id="251464627"/>
+								<MediaRef Id="553048187"/>
+								<MediaRef Id="1026431310"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3121412406" Id="0" GUID="{0209DC04-203A-40C1-A3CC-C9C4B2916418}"/>
+							<MediaRefs>
+								<MediaRef Id="21981681"/>
+								<MediaRef Id="75666480"/>
+								<MediaRef Id="229446504"/>
+								<MediaRef Id="251464627"/>
+								<MediaRef Id="553048187"/>
+								<MediaRef Id="1026431310"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="3121412406" Name="PlayerIndex" ObjectPath="\Game Parameters\Default Work Unit\PlayerIndex" GUID="{1E617351-5936-468F-A5B6-FC1EFB3651D0}"/>
+			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="3121412406" Name="PlayerIndex" ObjectPath="\Switches\Default Work Unit\PlayerIndex" GUID="{0209DC04-203A-40C1-A3CC-C9C4B2916418}">
+					<GameParameterRef Id="3121412406"/>
+					<Switches>
+						<Switch Id="671679327" Name="Hunter" ObjectPath="\Switches\Default Work Unit\PlayerIndex\Hunter" GUID="{A867BAC7-F348-4A13-9D99-8D6FA7492B5E}"/>
+						<Switch Id="3694479069" Name="Prey_01" ObjectPath="\Switches\Default Work Unit\PlayerIndex\Prey_01" GUID="{EE6F80A2-567A-46C4-AAED-E7A2896CBFF9}"/>
+						<Switch Id="3694479070" Name="Prey_02" ObjectPath="\Switches\Default Work Unit\PlayerIndex\Prey_02" GUID="{587098C4-8763-4D17-98C3-FCC074C29CD1}"/>
+						<Switch Id="3694479071" Name="Prey_03" ObjectPath="\Switches\Default Work Unit\PlayerIndex\Prey_03" GUID="{12DB972D-8992-4D0E-81CF-EACA80168D2F}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D8AADFF3-824B-5B9A-7FA1-4EA78C37B330}</FileHash>
+	<FileHash>{31DD6975-3666-EA23-339F-3BE7D7C7B3CD}</FileHash>
 </SoundBanksInfo>
