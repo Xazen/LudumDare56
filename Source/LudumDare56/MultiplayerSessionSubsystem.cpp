@@ -3,6 +3,7 @@
 
 #include "MultiplayerSessionSubsystem.h"
 
+#include "MyPlayerController.h"
 #include "OnlineSubsystem.h"
 
 #include "Engine/Engine.h"
@@ -45,6 +46,7 @@ void UMultiplayerSessionSubsystem::Initialize(FSubsystemCollectionBase& Collecti
 			SessionInterface->OnDestroySessionCompleteDelegates.AddUObject(this, &UMultiplayerSessionSubsystem::OnDestroySessionComplete);
 			SessionInterface->OnFindSessionsCompleteDelegates.AddUObject(this, &UMultiplayerSessionSubsystem::OnFindSessionsComplete);
 			SessionInterface->OnJoinSessionCompleteDelegates.AddUObject(this, &UMultiplayerSessionSubsystem::OnJoinSessionComplete);
+			SessionInterface->OnSessionParticipantJoinedDelegates.AddUObject(this, &UMultiplayerSessionSubsystem::OnSessionParticipantJoined);
 		}
 	}
 }
@@ -117,7 +119,14 @@ void UMultiplayerSessionSubsystem::OnCreateSessionComplete(FName SessionName, bo
 
 	if (WasSuccessful)
 	{
-		GetWorld()->ServerTravel("/Game/ThirdPerson/Maps/ThirdPersonMap?listen");
+		FString Path = "/Game/ThirdPerson/Maps/Blockout?listen";
+		if (!GameMapPath.IsEmpty())
+		{
+			Path = FString::Printf(TEXT("%s?listen"), *GameMapPath);
+		}
+
+		IsHunter = true;
+		GetWorld()->ServerTravel(Path);
 	}
 }
 
@@ -193,7 +202,8 @@ void UMultiplayerSessionSubsystem::OnJoinSessionComplete(FName SessionName, EOnJ
 			if (PC)
 			{
 				PrintString(FString::Printf(TEXT("Will join session")));
-				PC->ClientTravel(Address, ETravelType::TRAVEL_Absolute);
+				IsHunter = false;
+				PC->ClientTravel(Address, TRAVEL_Absolute);
 			}
 		}
 		else
@@ -205,4 +215,9 @@ void UMultiplayerSessionSubsystem::OnJoinSessionComplete(FName SessionName, EOnJ
 	{
 		PrintString("Failed to join session");
 	}
+}
+
+void UMultiplayerSessionSubsystem::OnSessionParticipantJoined(FName SessionName, const FUniqueNetId& ParticipantId)
+{
+	PrintString(FString::Printf(TEXT("OnSessionParticipantJoined: %s"), *ParticipantId.ToString()));
 }

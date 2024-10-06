@@ -34,10 +34,16 @@ public:
 	void OnDestroySessionComplete(FName SessionName, bool WasSuccessful);
 	void OnJoinSessionComplete(FName SessionName, EOnJoinSessionCompleteResult::Type Result);
 	void OnFindSessionsComplete(bool WasSuccessful);
+	void OnSessionParticipantJoined(FName SessionName, const FUniqueNetId& ParticipantId);
 
 	bool CreateSessionAfterDestroy;
 	FString DestroyServerName;
 	FString ServerNameToFind;
 	FName MySessionName;
 	TSharedPtr<FOnlineSessionSearch> SessionSearch;
+
+	UPROPERTY(BlueprintReadWrite)
+	FString GameMapPath;
+
+	bool IsHunter;
 };
