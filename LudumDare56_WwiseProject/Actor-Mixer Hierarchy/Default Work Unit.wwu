@@ -1,6 +1,571 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{4E32E2E0-B069-4926-98E5-A425C28B87E1}" SchemaVersion="119">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{4E32E2E0-B069-4926-98E5-A425C28B87E1}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{4E32E2E0-B069-4926-98E5-A425C28B87E1}" PersistMode="Standalone">
+			<ChildrenList>
+				<BlendContainer Name="Atmo" ID="{E4C0474E-0CBB-40AF-90DA-E4CED3727288}" ShortID="502523">
+					<PropertyList>
+						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A26F471C-2E9A-4F51-9AE5-CA786A5ADBDF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Environmental" ID="{8736C5E9-36E1-4651-A66B-D8BF53CFF09A}" WorkUnitID="{323EA2A7-99B6-4A71-A177-151B4B092988}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Base_Loop" ID="{1F73DE87-2521-4B28-923F-5D4748FEB129}" ShortID="71215180">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A26F471C-2E9A-4F51-9AE5-CA786A5ADBDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{323EA2A7-99B6-4A71-A177-151B4B092988}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Atmo" ID="{A1E98423-4632-4D27-ACA9-01FB392AFE14}">
+									<Language>SFX</Language>
+									<AudioFile>Atmo.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="270578750"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{353C0594-8DFE-4762-BEAD-15FC6E7D2571}" ShortID="737552577">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<Custom>
+															<ModulatorLfo Name="Modulator LFO (Custom)" ID="{66C8F254-17C4-42D9-B92D-CF146FD7172B}" ShortID="55092388">
+																<PropertyList>
+																	<Property Name="LfoFrequency" Type="Real64" Value="0.02"/>
+																</PropertyList>
+															</ModulatorLfo>
+														</Custom>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{22E0A3B3-F6DB-4F9D-8FE7-7FF204D0DF64}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-4.22553</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="Atmo" ID="{A1E98423-4632-4D27-ACA9-01FB392AFE14}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Crow_Wrapper" ID="{6D38248D-8239-4961-A9C5-BA804E97900E}" ShortID="850958905">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A26F471C-2E9A-4F51-9AE5-CA786A5ADBDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{323EA2A7-99B6-4A71-A177-151B4B092988}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Crows" ID="{4C95929E-0523-44F6-B913-68B7E88CD1E5}" ShortID="419285590">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A26F471C-2E9A-4F51-9AE5-CA786A5ADBDF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Environmental" ID="{8736C5E9-36E1-4651-A66B-D8BF53CFF09A}" WorkUnitID="{323EA2A7-99B6-4A71-A177-151B4B092988}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Crows 1" ID="{58583A62-10A1-4685-8E76-FEA84B8EF02D}" ShortID="449308176">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A26F471C-2E9A-4F51-9AE5-CA786A5ADBDF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{323EA2A7-99B6-4A71-A177-151B4B092988}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Crows 1" ID="{1CC214B7-4FE8-49F4-9878-821E24DD017C}">
+													<Language>SFX</Language>
+													<AudioFile>Crows 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="673009621"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Crows 1" ID="{1CC214B7-4FE8-49F4-9878-821E24DD017C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Crows 2" ID="{3042C2B0-B783-45B6-8F96-18CDB8088187}" ShortID="474450204">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A26F471C-2E9A-4F51-9AE5-CA786A5ADBDF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{323EA2A7-99B6-4A71-A177-151B4B092988}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Crows 2" ID="{6A488447-ED81-4B4F-9DD9-0832A356F1EC}">
+													<Language>SFX</Language>
+													<AudioFile>Crows 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="941288025"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Crows 2" ID="{6A488447-ED81-4B4F-9DD9-0832A356F1EC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Crows 3" ID="{31DF2752-1F8B-4B8F-AFC1-6EF9E3EFB1D3}" ShortID="387949378">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A26F471C-2E9A-4F51-9AE5-CA786A5ADBDF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{323EA2A7-99B6-4A71-A177-151B4B092988}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Crows 3" ID="{AACB3D2F-6644-488B-8CF0-E7092D7A6EBB}">
+													<Language>SFX</Language>
+													<AudioFile>Crows 3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="265299999"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Crows 3" ID="{AACB3D2F-6644-488B-8CF0-E7092D7A6EBB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="Silence" ID="{BA31C05E-8B1A-4443-97A8-97D1232B3EB2}" ShortID="300348996">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A26F471C-2E9A-4F51-9AE5-CA786A5ADBDF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{323EA2A7-99B6-4A71-A177-151B4B092988}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Silence" ID="{08096ADF-DD41-4C01-9F59-0AF46827C674}" ShortID="1008662024" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="Length" Type="Real32" Value="6"/>
+												<Property Name="LengthMax" Type="Real32" Value="3"/>
+												<Property Name="LengthMin" Type="Real32" Value="-4"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Silence" ID="{08096ADF-DD41-4C01-9F59-0AF46827C674}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Playlist">
+									<Reference>
+										<ObjectRef Name="Silence" ID="{BA31C05E-8B1A-4443-97A8-97D1232B3EB2}" WorkUnitID="{4E32E2E0-B069-4926-98E5-A425C28B87E1}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="Crows" ID="{4C95929E-0523-44F6-B913-68B7E88CD1E5}" WorkUnitID="{4E32E2E0-B069-4926-98E5-A425C28B87E1}"/>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="POS Wrapper" ID="{78F4B194-4FAD-4771-8CB2-95008C1619FC}" ShortID="526085195">
+							<PropertyList>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A26F471C-2E9A-4F51-9AE5-CA786A5ADBDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{323EA2A7-99B6-4A71-A177-151B4B092988}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="AtmoVerb" ID="{A6560CB2-F3DF-4900-BCD9-DD828E10D07B}" WorkUnitID="{323EA2A7-99B6-4A71-A177-151B4B092988}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="POS" ID="{09E2B41D-FF04-429E-9324-E0CC7993EED6}" ShortID="649478906">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom>
+												<Attenuation Name="Attenuation (Custom)" ID="{896FD9F6-8BBC-4060-B135-4C8A6911C50C}" ShortID="523690853">
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{C7412DE6-A532-4714-99BF-12898F0A3587}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>100</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+														<ObstructionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionVolumeUsage>
+														<ObstructionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionLPFUsage>
+														<ObstructionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionHPFUsage>
+														<OcclusionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionVolumeUsage>
+														<OcclusionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionLPFUsage>
+														<OcclusionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionHPFUsage>
+														<DiffractionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionVolumeUsage>
+														<DiffractionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionLPFUsage>
+														<DiffractionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionHPFUsage>
+														<TransmissionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionVolumeUsage>
+														<TransmissionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionLPFUsage>
+														<TransmissionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionHPFUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A26F471C-2E9A-4F51-9AE5-CA786A5ADBDF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Environmental" ID="{8736C5E9-36E1-4651-A66B-D8BF53CFF09A}" WorkUnitID="{323EA2A7-99B6-4A71-A177-151B4B092988}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="RavenPOS 1" ID="{090564CF-D448-4F1F-BD34-52167BF6DD9D}" ShortID="53398167">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A26F471C-2E9A-4F51-9AE5-CA786A5ADBDF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{323EA2A7-99B6-4A71-A177-151B4B092988}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RavenPOS 1" ID="{A45079A2-08FE-4E8E-BA3E-0CD01F840943}">
+													<Language>SFX</Language>
+													<AudioFile>RavenPOS 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="828320069"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RavenPOS 1" ID="{A45079A2-08FE-4E8E-BA3E-0CD01F840943}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RavenPOS 2" ID="{6C3F30C8-D1ED-4E54-9B3F-BF337E4AA0B4}" ShortID="1053083698">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A26F471C-2E9A-4F51-9AE5-CA786A5ADBDF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{323EA2A7-99B6-4A71-A177-151B4B092988}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RavenPOS 2" ID="{24C6FC44-AC25-4E0A-AA29-687B0A00D756}">
+													<Language>SFX</Language>
+													<AudioFile>RavenPOS 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="377168034"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RavenPOS 2" ID="{24C6FC44-AC25-4E0A-AA29-687B0A00D756}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RavenPOS 3" ID="{D127515C-0EAC-4158-9709-FF71C425114D}" ShortID="711970860">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A26F471C-2E9A-4F51-9AE5-CA786A5ADBDF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{323EA2A7-99B6-4A71-A177-151B4B092988}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RavenPOS 3" ID="{430DAF23-4162-4334-B407-38216C7CAE9B}">
+													<Language>SFX</Language>
+													<AudioFile>RavenPOS 3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="231796351"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RavenPOS 3" ID="{430DAF23-4162-4334-B407-38216C7CAE9B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RavenPOS 4" ID="{54B8A55A-EBBA-4B74-9913-392A2629BA81}" ShortID="194121892">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A26F471C-2E9A-4F51-9AE5-CA786A5ADBDF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{323EA2A7-99B6-4A71-A177-151B4B092988}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RavenPOS 4" ID="{51273E12-8A64-44DB-8E4A-29764EF66110}">
+													<Language>SFX</Language>
+													<AudioFile>RavenPOS 4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1022596171"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RavenPOS 4" ID="{51273E12-8A64-44DB-8E4A-29764EF66110}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RavenPOS 5" ID="{4265C12F-0F9D-4C7F-8C02-9290AD116265}" ShortID="388385298">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A26F471C-2E9A-4F51-9AE5-CA786A5ADBDF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{323EA2A7-99B6-4A71-A177-151B4B092988}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RavenPOS 5" ID="{E624FD98-2847-48F5-A919-CA6A07269F8A}">
+													<Language>SFX</Language>
+													<AudioFile>RavenPOS 5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="21044073"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RavenPOS 5" ID="{E624FD98-2847-48F5-A919-CA6A07269F8A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RavenPOS 6" ID="{76B50EE4-AFDF-49C2-982B-B570644FF6C1}" ShortID="816506194">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A26F471C-2E9A-4F51-9AE5-CA786A5ADBDF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{323EA2A7-99B6-4A71-A177-151B4B092988}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RavenPOS 6" ID="{47F7A62F-0AA9-4913-A5CA-7E08658681E2}">
+													<Language>SFX</Language>
+													<AudioFile>RavenPOS 6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="900233950"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RavenPOS 6" ID="{47F7A62F-0AA9-4913-A5CA-7E08658681E2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RavenPOS 7" ID="{578A0DC1-CC2A-4EA1-BC02-16A2FF22BAF0}" ShortID="696301857">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A26F471C-2E9A-4F51-9AE5-CA786A5ADBDF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{323EA2A7-99B6-4A71-A177-151B4B092988}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RavenPOS 7" ID="{A4814E71-8EEC-42F1-B4FF-D547D0B510CE}">
+													<Language>SFX</Language>
+													<AudioFile>RavenPOS 7.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="995984485"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RavenPOS 7" ID="{A4814E71-8EEC-42F1-B4FF-D547D0B510CE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{41B4E1F3-2FDE-4A06-980E-1E9488BE4FD1}">
+											<ChildrenList>
+												<Path2D Name="POS_Path" ID="{A09548F4-D4E5-41B6-82BE-B8915B9B57B8}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="48"/>
+														<Property Name="RandomY" Type="Real64" Value="49"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+								</RandomSequenceContainer>
+								<Sound Name="Silence" ID="{29C881E5-16C9-40EB-86B9-F890DA080754}" ShortID="469892718">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A26F471C-2E9A-4F51-9AE5-CA786A5ADBDF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Environmental" ID="{8736C5E9-36E1-4651-A66B-D8BF53CFF09A}" WorkUnitID="{323EA2A7-99B6-4A71-A177-151B4B092988}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Silence" ID="{875ED2BF-0780-49FD-8248-C5F5AD0868BB}" ShortID="125623064" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="Length" Type="Real32" Value="3"/>
+												<Property Name="LengthMax" Type="Real32" Value="8"/>
+												<Property Name="LengthMin" Type="Real32" Value="-3"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Silence" ID="{875ED2BF-0780-49FD-8248-C5F5AD0868BB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Playlist">
+									<Reference>
+										<ObjectRef Name="Silence" ID="{29C881E5-16C9-40EB-86B9-F890DA080754}" WorkUnitID="{4E32E2E0-B069-4926-98E5-A425C28B87E1}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="POS" ID="{09E2B41D-FF04-429E-9324-E0CC7993EED6}" WorkUnitID="{4E32E2E0-B069-4926-98E5-A425C28B87E1}"/>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</BlendContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

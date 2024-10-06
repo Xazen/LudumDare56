@@ -1,22 +1,41 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1861514260	Play_Tiny_Music			\Default Work Unit\Play_Tiny_Music	
 	2932040671	Play_Music			\Default Work Unit\Play_Music	
+	3133186549	Play_Atmo			\Default Work Unit\Play_Atmo	
 	3959090300	Play_Big_Music			\Default Work Unit\Play_Big_Music	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	286661824	Music_Distance			\Default Work Unit\Music_Distance	
 
+Modulator LFO	ID	Name			Wwise Object Path	Notes
+	55092388	Modulator LFO (Custom)				
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	125623064	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Atmo\POS Wrapper\Silence\Silence	
+	1008662024	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Atmo\Crow_Wrapper\Silence\Silence	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	21044073	RavenPOS 5	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\RavenPOS 5_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Atmo\POS Wrapper\POS\RavenPOS 5		26051
 	21981681	TinyTrack_StressLvl_2	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\TinyTrack_StressLvl_2_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Tiny_Music\Tiny_Music\TinyTrack_StressLvl_2		716195
 	75666480	TinyTrack_Hunter_1	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\TinyTrack_Hunter_1_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Tiny_Music\Tiny_Music\TinyTrack_Hunter_1		600830
 	170286855	BigTrack_StressLvl_3	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\BigTrack_StressLvl_3_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Big_Music\Big_Music\BigTrack_StressLvl_3		818068
 	229446504	TinyTrack_StressLvl_3	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\TinyTrack_StressLvl_3_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Tiny_Music\Tiny_Music\TinyTrack_StressLvl_3		824841
+	231796351	RavenPOS 3	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\RavenPOS 3_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Atmo\POS Wrapper\POS\RavenPOS 3		24955
 	234216803	BigTrack_Lead	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\BigTrack_Lead_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Big_Music\Big_Music\BigTrack_Lead		821239
 	251464627	TinyTrack_Hunter_2	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\TinyTrack_Hunter_2_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Tiny_Music\Tiny_Music\TinyTrack_Hunter_2		722720
+	265299999	Crows 3	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Crows 3_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Atmo\Crow_Wrapper\Crows\Crows 3		223353
+	270578750	Base_Loop	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Atmo_56CEF360.wem		\Actor-Mixer Hierarchy\Default Work Unit\Atmo\Base_Loop		885664
 	319399716	BigTrack_Base	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\BigTrack_Base_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Big_Music\Big_Music\BigTrack_Base		667675
+	377168034	RavenPOS 2	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\RavenPOS 2_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Atmo\POS Wrapper\POS\RavenPOS 2		26410
 	553048187	TinyTrack_StressLvl_1	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\TinyTrack_StressLvl_1_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Tiny_Music\Tiny_Music\TinyTrack_StressLvl_1		784825
 	624560513	BigTrack_StressLvl_1	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\BigTrack_StressLvl_1_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Big_Music\Big_Music\BigTrack_StressLvl_1		759018
+	673009621	Crows 1	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Crows 1_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Atmo\Crow_Wrapper\Crows\Crows 1		140125
 	777875941	BigTrack_Prey	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\BigTrack_Prey_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Big_Music\Big_Music\BigTrack_Prey		832854
+	828320069	RavenPOS 1	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\RavenPOS 1_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Atmo\POS Wrapper\POS\RavenPOS 1		25925
+	900233950	RavenPOS 6	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\RavenPOS 6_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Atmo\POS Wrapper\POS\RavenPOS 6		25973
+	941288025	Crows 2	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Crows 2_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Atmo\Crow_Wrapper\Crows\Crows 2		146790
 	971307101	BigTrack_StressLvl_2	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\BigTrack_StressLvl_2_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Big_Music\Big_Music\BigTrack_StressLvl_2		801982
+	995984485	RavenPOS 7	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\RavenPOS 7_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Atmo\POS Wrapper\POS\RavenPOS 7		24525
+	1022596171	RavenPOS 4	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\RavenPOS 4_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Atmo\POS Wrapper\POS\RavenPOS 4		26363
 	1026431310	TinyTrack_Base	F:\GitForque\LudumDare56\LudumDare56_WwiseProject\.cache\Windows\SFX\Music\TinyTrack_Base_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Tiny_Music\Tiny_Music\TinyTrack_Base		826088
 

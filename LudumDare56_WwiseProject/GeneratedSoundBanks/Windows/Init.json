@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{C56F0167-3F5E-CBFC-214F-42A53DC5FEE6}",
+    "Hash": "{FDDD41D8-B270-6B52-A257-921B7FA015FD}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -23,6 +23,14 @@
        "GUID": "{BE4E9F71-EDE1-4D32-BF1A-CB54B6B89E22}",
        "LibName": "Wwise Peak Limiter",
        "LibId": "7208963"
+      },
+      {
+       "Id": "92554298",
+       "Name": "Matrix Reverb (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\AtmoVerb\\[Effect Slot [0]: (Matrix Reverb)]\\Matrix Reverb (Custom)",
+       "GUID": "{05DDE1C0-FCCD-4A3A-9822-40847918EC00}",
+       "LibName": "Wwise Matrix Reverb",
+       "LibId": "7536643"
       }
      ],
      "AudioDevices": [
@@ -83,6 +91,21 @@
       "GUID": "{7E4B7A97-8DAA-4CA1-8D8D-D5607540022B}"
      }
     ],
+    "AuxBusses": [
+     {
+      "Id": "1577150509",
+      "Name": "AtmoVerb",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\AtmoVerb",
+      "GUID": "{A6560CB2-F3DF-4900-BCD9-DD828E10D07B}",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "92554298"
+        }
+       ]
+      }
+     }
+    ],
     "GameParameters": [
      {
       "Id": "286661824",
@@ -136,6 +159,6 @@
     ]
    }
   ],
-  "FileHash": "{49E70C7B-B9F9-1AAF-AC2A-38E6965CE4EC}"
+  "FileHash": "{89363449-D33D-BB48-A75E-A723A7D8EAC1}"
  }
 }

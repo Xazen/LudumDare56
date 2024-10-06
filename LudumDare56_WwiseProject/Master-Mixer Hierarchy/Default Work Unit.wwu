@@ -110,6 +110,25 @@
 								</Bus>
 							</ChildrenList>
 						</Bus>
+						<AuxBus Name="AtmoVerb" ID="{A6560CB2-F3DF-4900-BCD9-DD828E10D07B}">
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{63E57A12-2F34-4B01-9037-7C47FA3EEC9B}" ShortID="224015666">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Matrix Reverb (Custom)" ID="{05DDE1C0-FCCD-4A3A-9822-40847918EC00}" ShortID="92554298" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3"/>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
 					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="Effects">

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{C56F0167-3F5E-CBFC-214F-42A53DC5FEE6}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{FDDD41D8-B270-6B52-A257-921B7FA015FD}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
 				<Custom>
 					<Plugin Id="57310974" Name="Peak Limiter (Custom)" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\[Effect Slot [0]: (Peak Limiter)]\Peak Limiter (Custom)" GUID="{BE4E9F71-EDE1-4D32-BF1A-CB54B6B89E22}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+					<Plugin Id="92554298" Name="Matrix Reverb (Custom)" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AtmoVerb\[Effect Slot [0]: (Matrix Reverb)]\Matrix Reverb (Custom)" GUID="{05DDE1C0-FCCD-4A3A-9822-40847918EC00}" LibName="Wwise Matrix Reverb" LibId="7536643"/>
 				</Custom>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" ObjectPath="\Audio Devices\Default Work Unit\No_Output" GUID="{323741DB-A6F6-43DF-B8C5-0F05682A6393}" LibName="No Output" LibId="11862023"/>
@@ -27,6 +28,15 @@
 				</Bus>
 				<Bus Id="3897422071" Name="OpponentMusic" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerSpecific\OpponentMusic" GUID="{7E4B7A97-8DAA-4CA1-8D8D-D5607540022B}"/>
 			</Busses>
+			<AuxBusses>
+				<AuxBus Id="1577150509" Name="AtmoVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AtmoVerb" GUID="{A6560CB2-F3DF-4900-BCD9-DD828E10D07B}">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="92554298"/>
+						</Custom>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
 			<GameParameters>
 				<GameParameter Id="286661824" Name="Music_Distance" ObjectPath="\Game Parameters\Default Work Unit\Music_Distance" GUID="{0E48E239-1410-4A71-8B8C-D9B384853B00}"/>
 				<GameParameter Id="3121412406" Name="PlayerIndex" ObjectPath="\Game Parameters\Default Work Unit\PlayerIndex" GUID="{1E617351-5936-468F-A5B6-FC1EFB3651D0}"/>
@@ -44,5 +54,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{71063ABD-C040-70EE-1020-A3A7F3D4164F}</FileHash>
+	<FileHash>{A25ABDED-46AA-F4ED-3293-F62098C73B92}</FileHash>
 </SoundBanksInfo>

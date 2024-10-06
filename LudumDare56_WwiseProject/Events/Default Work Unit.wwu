@@ -8,7 +8,7 @@
 						<Action Name="" ID="{D7CE654B-E342-4B16-BF26-8DDA81F5EE06}" ShortID="1036559113">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Tiny_Music" ID="{B7C31946-7E9C-4515-9242-82D8FD29FE6A}" WorkUnitID="{F74A50C0-B08D-48F0-AA9F-907DA97341E3}"/>
+									<ObjectRef Name="Temp_Music" ID="{985D6A68-2DCF-447A-8067-28E6C911A12D}" WorkUnitID="{F74A50C0-B08D-48F0-AA9F-907DA97341E3}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -31,6 +31,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Tiny_Music" ID="{B7C31946-7E9C-4515-9242-82D8FD29FE6A}" WorkUnitID="{F74A50C0-B08D-48F0-AA9F-907DA97341E3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Atmo" ID="{DD4354E2-30EE-417A-8868-B3D030027548}">
+					<ChildrenList>
+						<Action Name="" ID="{1EC0E745-CB62-4B42-8416-CDF1DF51EC54}" ShortID="16367098">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Atmo" ID="{E4C0474E-0CBB-40AF-90DA-E4CED3727288}" WorkUnitID="{4E32E2E0-B069-4926-98E5-A425C28B87E1}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

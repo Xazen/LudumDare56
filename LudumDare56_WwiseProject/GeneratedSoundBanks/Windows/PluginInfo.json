@@ -4,11 +4,25 @@
   "BasePlatform": "Windows",
   "PluginLibs": [
    {
+    "LibName": "Wwise Silence",
+    "LibId": "6619138",
+    "Type": "Source",
+    "DLL": "AkSilenceGenerator",
+    "StaticLib": "AkSilenceSource"
+   },
+   {
     "LibName": "Wwise Peak Limiter",
     "LibId": "7208963",
     "Type": "Effect",
     "DLL": "AkPeakLimiter",
     "StaticLib": "AkPeakLimiterFX"
+   },
+   {
+    "LibName": "Wwise Matrix Reverb",
+    "LibId": "7536643",
+    "Type": "Effect",
+    "DLL": "AkMatrixReverb",
+    "StaticLib": "AkMatrixReverbFX"
    },
    {
     "LibName": "System",
@@ -21,6 +35,6 @@
     "Type": "AudioDevice"
    }
   ],
-  "FileHash": "{93609133-1804-B354-32B8-FBDB6C3668CF}"
+  "FileHash": "{FBBF6AFB-3181-C435-19A5-6225D0E018FA}"
  }
 }

@@ -9,11 +9,15 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" GUID="{9764593B-6512-4C1D-B6C0-D9453C0D4A61}" Language="SFX" Hash="{E2789F8C-DFBE-63B2-6D88-8EBAF4CD8A78}">
+		<SoundBank Id="133642231" Type="User" GUID="{9764593B-6512-4C1D-B6C0-D9453C0D4A61}" Language="SFX" Hash="{7448EE75-481C-9C1A-9F5F-EFC482652D5B}">
 			<ObjectPath>\SoundBanks\Default Work Unit\General</ObjectPath>
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
+				<File Id="21044073" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>RavenPOS 5.wav</ShortName>
+					<CachePath>SFX/RavenPOS 5_8E324C96.wem</CachePath>
+				</File>
 				<File Id="21981681" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music\TinyTrack_StressLvl_2.wav</ShortName>
 					<CachePath>SFX/Music/TinyTrack_StressLvl_2_56CEF360.wem</CachePath>
@@ -30,6 +34,10 @@
 					<ShortName>Music\TinyTrack_StressLvl_3.wav</ShortName>
 					<CachePath>SFX/Music/TinyTrack_StressLvl_3_56CEF360.wem</CachePath>
 				</File>
+				<File Id="231796351" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>RavenPOS 3.wav</ShortName>
+					<CachePath>SFX/RavenPOS 3_8E324C96.wem</CachePath>
+				</File>
 				<File Id="234216803" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music\BigTrack_Lead.wav</ShortName>
 					<CachePath>SFX/Music/BigTrack_Lead_56CEF360.wem</CachePath>
@@ -38,9 +46,21 @@
 					<ShortName>Music\TinyTrack_Hunter_2.wav</ShortName>
 					<CachePath>SFX/Music/TinyTrack_Hunter_2_56CEF360.wem</CachePath>
 				</File>
+				<File Id="265299999" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Crows 3.wav</ShortName>
+					<CachePath>SFX/Crows 3_8E324C96.wem</CachePath>
+				</File>
+				<File Id="270578750" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Atmo.wav</ShortName>
+					<CachePath>SFX/Atmo_56CEF360.wem</CachePath>
+				</File>
 				<File Id="319399716" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music\BigTrack_Base.wav</ShortName>
 					<CachePath>SFX/Music/BigTrack_Base_56CEF360.wem</CachePath>
+				</File>
+				<File Id="377168034" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>RavenPOS 2.wav</ShortName>
+					<CachePath>SFX/RavenPOS 2_8E324C96.wem</CachePath>
 				</File>
 				<File Id="553048187" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music\TinyTrack_StressLvl_1.wav</ShortName>
@@ -50,20 +70,74 @@
 					<ShortName>Music\BigTrack_StressLvl_1.wav</ShortName>
 					<CachePath>SFX/Music/BigTrack_StressLvl_1_56CEF360.wem</CachePath>
 				</File>
+				<File Id="673009621" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Crows 1.wav</ShortName>
+					<CachePath>SFX/Crows 1_8E324C96.wem</CachePath>
+				</File>
 				<File Id="777875941" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music\BigTrack_Prey.wav</ShortName>
 					<CachePath>SFX/Music/BigTrack_Prey_56CEF360.wem</CachePath>
 				</File>
+				<File Id="828320069" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>RavenPOS 1.wav</ShortName>
+					<CachePath>SFX/RavenPOS 1_8E324C96.wem</CachePath>
+				</File>
+				<File Id="900233950" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>RavenPOS 6.wav</ShortName>
+					<CachePath>SFX/RavenPOS 6_8E324C96.wem</CachePath>
+				</File>
+				<File Id="941288025" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Crows 2.wav</ShortName>
+					<CachePath>SFX/Crows 2_8E324C96.wem</CachePath>
+				</File>
 				<File Id="971307101" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music\BigTrack_StressLvl_2.wav</ShortName>
 					<CachePath>SFX/Music/BigTrack_StressLvl_2_56CEF360.wem</CachePath>
+				</File>
+				<File Id="995984485" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>RavenPOS 7.wav</ShortName>
+					<CachePath>SFX/RavenPOS 7_8E324C96.wem</CachePath>
+				</File>
+				<File Id="1022596171" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>RavenPOS 4.wav</ShortName>
+					<CachePath>SFX/RavenPOS 4_8E324C96.wem</CachePath>
 				</File>
 				<File Id="1026431310" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music\TinyTrack_Base.wav</ShortName>
 					<CachePath>SFX/Music/TinyTrack_Base_56CEF360.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="125623064" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Default Work Unit\Atmo\POS Wrapper\Silence\Silence" GUID="{875ED2BF-0780-49FD-8248-C5F5AD0868BB}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="1008662024" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Default Work Unit\Atmo\Crow_Wrapper\Silence\Silence" GUID="{08096ADF-DD41-4C01-9F59-0AF46827C674}" LibName="Wwise Silence" LibId="6619138"/>
+				</Custom>
+			</Plugins>
 			<Events>
+				<Event Id="3133186549" Name="Play_Atmo" ObjectPath="\Events\Default Work Unit\Play_Atmo" GUID="{DD4354E2-30EE-417A-8868-B3D030027548}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="21044073"/>
+						<MediaRef Id="231796351"/>
+						<MediaRef Id="265299999"/>
+						<MediaRef Id="270578750"/>
+						<MediaRef Id="377168034"/>
+						<MediaRef Id="673009621"/>
+						<MediaRef Id="828320069"/>
+						<MediaRef Id="900233950"/>
+						<MediaRef Id="941288025"/>
+						<MediaRef Id="995984485"/>
+						<MediaRef Id="1022596171"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="125623064"/>
+							<PluginRef Id="1008662024"/>
+						</Custom>
+					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="1577150509" Name="AtmoVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AtmoVerb" GUID="{A6560CB2-F3DF-4900-BCD9-DD828E10D07B}"/>
+					</AuxBusRefs>
+				</Event>
 				<Event Id="3959090300" Name="Play_Big_Music" ObjectPath="\Events\Default Work Unit\Play_Big_Music" GUID="{5CE446E2-BBCD-435B-889E-CECDA9FE0205}" MaxAttenuation="5000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="170286855"/>
@@ -76,11 +150,6 @@
 				</Event>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music" GUID="{D0AEE4F7-87A8-4589-8241-24600350F313}" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="21981681"/>
-						<MediaRef Id="75666480"/>
-						<MediaRef Id="229446504"/>
-						<MediaRef Id="251464627"/>
-						<MediaRef Id="553048187"/>
 						<MediaRef Id="1026431310"/>
 					</MediaRefs>
 				</Event>
@@ -99,13 +168,14 @@
 				<GameParameter Id="286661824" Name="Music_Distance" ObjectPath="\Game Parameters\Default Work Unit\Music_Distance" GUID="{0E48E239-1410-4A71-8B8C-D9B384853B00}"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{C56F0167-3F5E-CBFC-214F-42A53DC5FEE6}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{FDDD41D8-B270-6B52-A257-921B7FA015FD}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
 				<Custom>
 					<Plugin Id="57310974" Name="Peak Limiter (Custom)" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\[Effect Slot [0]: (Peak Limiter)]\Peak Limiter (Custom)" GUID="{BE4E9F71-EDE1-4D32-BF1A-CB54B6B89E22}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+					<Plugin Id="92554298" Name="Matrix Reverb (Custom)" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AtmoVerb\[Effect Slot [0]: (Matrix Reverb)]\Matrix Reverb (Custom)" GUID="{05DDE1C0-FCCD-4A3A-9822-40847918EC00}" LibName="Wwise Matrix Reverb" LibId="7536643"/>
 				</Custom>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" ObjectPath="\Audio Devices\Default Work Unit\No_Output" GUID="{323741DB-A6F6-43DF-B8C5-0F05682A6393}" LibName="No Output" LibId="11862023"/>
@@ -125,6 +195,15 @@
 				</Bus>
 				<Bus Id="3897422071" Name="OpponentMusic" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerSpecific\OpponentMusic" GUID="{7E4B7A97-8DAA-4CA1-8D8D-D5607540022B}"/>
 			</Busses>
+			<AuxBusses>
+				<AuxBus Id="1577150509" Name="AtmoVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AtmoVerb" GUID="{A6560CB2-F3DF-4900-BCD9-DD828E10D07B}">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="92554298"/>
+						</Custom>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
 			<GameParameters>
 				<GameParameter Id="286661824" Name="Music_Distance" ObjectPath="\Game Parameters\Default Work Unit\Music_Distance" GUID="{0E48E239-1410-4A71-8B8C-D9B384853B00}"/>
 				<GameParameter Id="3121412406" Name="PlayerIndex" ObjectPath="\Game Parameters\Default Work Unit\PlayerIndex" GUID="{1E617351-5936-468F-A5B6-FC1EFB3651D0}"/>
@@ -142,5 +221,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{16C9F6E9-348F-3640-F71B-4B38C0C430A6}</FileHash>
+	<FileHash>{3AEAC1B9-10EF-66E1-1DD5-A646F0535DB1}</FileHash>
 </SoundBanksInfo>

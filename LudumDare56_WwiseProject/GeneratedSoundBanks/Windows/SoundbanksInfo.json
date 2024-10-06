@@ -18,11 +18,19 @@
     "Type": "User",
     "GUID": "{9764593B-6512-4C1D-B6C0-D9453C0D4A61}",
     "Language": "SFX",
-    "Hash": "{E2789F8C-DFBE-63B2-6D88-8EBAF4CD8A78}",
+    "Hash": "{7448EE75-481C-9C1A-9F5F-EFC482652D5B}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\General",
     "ShortName": "General",
     "Path": "General.bnk",
     "Media": [
+     {
+      "Id": "21044073",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RavenPOS 5.wav",
+      "CachePath": "SFX/RavenPOS 5_8E324C96.wem"
+     },
      {
       "Id": "21981681",
       "Language": "SFX",
@@ -56,6 +64,14 @@
       "CachePath": "SFX/Music/TinyTrack_StressLvl_3_56CEF360.wem"
      },
      {
+      "Id": "231796351",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RavenPOS 3.wav",
+      "CachePath": "SFX/RavenPOS 3_8E324C96.wem"
+     },
+     {
       "Id": "234216803",
       "Language": "SFX",
       "Streaming": "false",
@@ -72,12 +88,36 @@
       "CachePath": "SFX/Music/TinyTrack_Hunter_2_56CEF360.wem"
      },
      {
+      "Id": "265299999",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Crows 3.wav",
+      "CachePath": "SFX/Crows 3_8E324C96.wem"
+     },
+     {
+      "Id": "270578750",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Atmo.wav",
+      "CachePath": "SFX/Atmo_56CEF360.wem"
+     },
+     {
       "Id": "319399716",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Music\\BigTrack_Base.wav",
       "CachePath": "SFX/Music/BigTrack_Base_56CEF360.wem"
+     },
+     {
+      "Id": "377168034",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RavenPOS 2.wav",
+      "CachePath": "SFX/RavenPOS 2_8E324C96.wem"
      },
      {
       "Id": "553048187",
@@ -96,12 +136,44 @@
       "CachePath": "SFX/Music/BigTrack_StressLvl_1_56CEF360.wem"
      },
      {
+      "Id": "673009621",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Crows 1.wav",
+      "CachePath": "SFX/Crows 1_8E324C96.wem"
+     },
+     {
       "Id": "777875941",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Music\\BigTrack_Prey.wav",
       "CachePath": "SFX/Music/BigTrack_Prey_56CEF360.wem"
+     },
+     {
+      "Id": "828320069",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RavenPOS 1.wav",
+      "CachePath": "SFX/RavenPOS 1_8E324C96.wem"
+     },
+     {
+      "Id": "900233950",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RavenPOS 6.wav",
+      "CachePath": "SFX/RavenPOS 6_8E324C96.wem"
+     },
+     {
+      "Id": "941288025",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Crows 2.wav",
+      "CachePath": "SFX/Crows 2_8E324C96.wem"
      },
      {
       "Id": "971307101",
@@ -112,6 +184,22 @@
       "CachePath": "SFX/Music/BigTrack_StressLvl_2_56CEF360.wem"
      },
      {
+      "Id": "995984485",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RavenPOS 7.wav",
+      "CachePath": "SFX/RavenPOS 7_8E324C96.wem"
+     },
+     {
+      "Id": "1022596171",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RavenPOS 4.wav",
+      "CachePath": "SFX/RavenPOS 4_8E324C96.wem"
+     },
+     {
       "Id": "1026431310",
       "Language": "SFX",
       "Streaming": "false",
@@ -120,7 +208,87 @@
       "CachePath": "SFX/Music/TinyTrack_Base_56CEF360.wem"
      }
     ],
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "125623064",
+       "Name": "Silence",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Atmo\\POS Wrapper\\Silence\\Silence",
+       "GUID": "{875ED2BF-0780-49FD-8248-C5F5AD0868BB}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      },
+      {
+       "Id": "1008662024",
+       "Name": "Silence",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Atmo\\Crow_Wrapper\\Silence\\Silence",
+       "GUID": "{08096ADF-DD41-4C01-9F59-0AF46827C674}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      }
+     ]
+    },
     "Events": [
+     {
+      "Id": "3133186549",
+      "Name": "Play_Atmo",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Atmo",
+      "GUID": "{DD4354E2-30EE-417A-8868-B3D030027548}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "21044073"
+       },
+       {
+        "Id": "231796351"
+       },
+       {
+        "Id": "265299999"
+       },
+       {
+        "Id": "270578750"
+       },
+       {
+        "Id": "377168034"
+       },
+       {
+        "Id": "673009621"
+       },
+       {
+        "Id": "828320069"
+       },
+       {
+        "Id": "900233950"
+       },
+       {
+        "Id": "941288025"
+       },
+       {
+        "Id": "995984485"
+       },
+       {
+        "Id": "1022596171"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "125623064"
+        },
+        {
+         "Id": "1008662024"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "1577150509",
+        "Name": "AtmoVerb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\AtmoVerb",
+        "GUID": "{A6560CB2-F3DF-4900-BCD9-DD828E10D07B}"
+       }
+      ]
+     },
      {
       "Id": "3959090300",
       "Name": "Play_Big_Music",
@@ -156,21 +324,6 @@
       "GUID": "{D0AEE4F7-87A8-4589-8241-24600350F313}",
       "DurationType": "Infinite",
       "MediaRefs": [
-       {
-        "Id": "21981681"
-       },
-       {
-        "Id": "75666480"
-       },
-       {
-        "Id": "229446504"
-       },
-       {
-        "Id": "251464627"
-       },
-       {
-        "Id": "553048187"
-       },
        {
         "Id": "1026431310"
        }
@@ -218,7 +371,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{C56F0167-3F5E-CBFC-214F-42A53DC5FEE6}",
+    "Hash": "{FDDD41D8-B270-6B52-A257-921B7FA015FD}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -231,6 +384,14 @@
        "GUID": "{BE4E9F71-EDE1-4D32-BF1A-CB54B6B89E22}",
        "LibName": "Wwise Peak Limiter",
        "LibId": "7208963"
+      },
+      {
+       "Id": "92554298",
+       "Name": "Matrix Reverb (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\AtmoVerb\\[Effect Slot [0]: (Matrix Reverb)]\\Matrix Reverb (Custom)",
+       "GUID": "{05DDE1C0-FCCD-4A3A-9822-40847918EC00}",
+       "LibName": "Wwise Matrix Reverb",
+       "LibId": "7536643"
       }
      ],
      "AudioDevices": [
@@ -291,6 +452,21 @@
       "GUID": "{7E4B7A97-8DAA-4CA1-8D8D-D5607540022B}"
      }
     ],
+    "AuxBusses": [
+     {
+      "Id": "1577150509",
+      "Name": "AtmoVerb",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\AtmoVerb",
+      "GUID": "{A6560CB2-F3DF-4900-BCD9-DD828E10D07B}",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "92554298"
+        }
+       ]
+      }
+     }
+    ],
     "GameParameters": [
      {
       "Id": "286661824",
@@ -344,6 +520,6 @@
     ]
    }
   ],
-  "FileHash": "{ACC8692F-ACEC-FE3E-059B-6706F968A4C0}"
+  "FileHash": "{02B3783E-349A-9EDC-C157-DF10325B3AF0}"
  }
 }
